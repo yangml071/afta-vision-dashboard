@@ -1,5 +1,5 @@
 {
- "generated_at": 1795105000.2917905,
+ "generated_at": 1795105030.315763,
  "public_view": true,
  "rows": [
   {
@@ -8,7 +8,7 @@
    "task": "hang_cup",
    "expected": 100,
    "audited": false,
-   "updated_at": 1795104985.5127714,
+   "updated_at": 1795105015.8939652,
    "title": "Franka400 LeRobot · DP · 跨本体对齐 · 冻结视觉",
    "family": "Franka400 LeRobot DP · 24→104",
    "task_label": "挂杯",
@@ -87,7 +87,7 @@
    "task": "hang_cup",
    "expected": 100,
    "audited": false,
-   "updated_at": 1795104985.5127714,
+   "updated_at": 1795105015.8939652,
    "title": "Franka400 LeRobot · 纯 DP",
    "family": "Franka400 LeRobot DP · 24→104",
    "task_label": "挂杯",
@@ -95,7 +95,7 @@
    "live_groups": 0,
    "training": [
     {
-     "current": 21240,
+     "current": 21560,
      "target": 50000,
      "state": "running",
      "label": "DP"
@@ -160,7 +160,7 @@
    "task": "hang_cup",
    "expected": 100,
    "audited": false,
-   "updated_at": 1795104985.5127714,
+   "updated_at": 1795105015.8939652,
    "title": "Franka400 LeRobot · DP · 跨本体对齐 · 联合微调",
    "family": "Franka400 LeRobot DP · 24→104",
    "task_label": "挂杯",
@@ -241,7 +241,7 @@
    "checkpoint_step": 40000,
    "audited": false,
    "thread_metric": true,
-   "updated_at": 1795104989.2998095,
+   "updated_at": 1795105022.7516966,
    "title": "GoalDiffusionPolicyV2 · 40,000 步",
    "family": "最高优先评测 · GoalDiffusionPolicyV2",
    "task_label": "挂杯",
@@ -335,17 +335,17 @@
   },
   {
    "id": "affordance_goal24_v2_40000",
-   "state": "queued",
+   "state": "error",
    "task": "hang_cup",
    "expected": 100,
    "checkpoint_step": 40000,
    "audited": false,
    "thread_metric": true,
-   "updated_at": 1795104993.891739,
+   "updated_at": 1795105018.272322,
    "title": "GoalPolicyV2 · 40,000 步",
    "family": "最高优先评测 · GoalPolicyV2",
    "task_label": "挂杯",
-   "connection": "online",
+   "connection": "stale",
    "live_groups": 0,
    "training": [
     {
@@ -5758,7 +5758,7 @@
  "completion_estimates": {
   "aghost_franka400_hang_plain": {
    "training": {
-    "finish_at": 1795108062.3737528
+    "finish_at": 1795108047.5381708
    }
   },
   "aghost_franka100_coffee_frozen": {
@@ -5779,51 +5779,51 @@
  },
  "feeds": {
   "数据源 1": {
-   "age_seconds": 11.528620719909668,
+   "age_seconds": 41.55259323120117,
    "error": null
   },
   "数据源 2": {
-   "age_seconds": 8.290329694747925,
+   "age_seconds": 38.31430220603943,
    "error": null
   },
   "数据源 3": {
-   "age_seconds": 8.496607780456543,
+   "age_seconds": 38.52058029174805,
    "error": null
   },
   "数据源 4": {
-   "age_seconds": 8.345412731170654,
+   "age_seconds": 38.36938524246216,
    "error": null
   },
   "数据源 5": {
-   "age_seconds": 8.392211437225342,
+   "age_seconds": 38.416183948516846,
    "error": null
   },
   "数据源 6": {
-   "age_seconds": 30.847935914993286,
+   "age_seconds": 60.87190842628479,
    "error": null
   },
   "数据源 7": {
-   "age_seconds": 29306.445337057114,
+   "age_seconds": 29336.469309568405,
    "error": null
   },
   "数据源 8": {
-   "age_seconds": 20855.892853975296,
+   "age_seconds": 20885.916826486588,
    "error": null
   },
   "数据源 9": {
-   "age_seconds": 6367.630073547363,
+   "age_seconds": 6397.654046058655,
    "error": null
   },
   "数据源 10": {
-   "age_seconds": 6.400051593780518,
-   "error": null
+   "age_seconds": 12.0434410572052,
+   "error": "暂未更新"
   },
   "数据源 11": {
-   "age_seconds": 10.991981029510498,
+   "age_seconds": 7.564066410064697,
    "error": null
   },
   "数据源 12": {
-   "age_seconds": 14.779019117355347,
+   "age_seconds": 14.421797752380371,
    "error": null
   }
  }
