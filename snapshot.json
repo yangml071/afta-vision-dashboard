@@ -1,5 +1,5 @@
 {
- "generated_at": 1795097674.4429011,
+ "generated_at": 1795097704.4700298,
  "public_view": true,
  "rows": [
   {
@@ -10,7 +10,7 @@
    "checkpoint_step": 40000,
    "audited": false,
    "thread_metric": true,
-   "updated_at": 1795097663.6188552,
+   "updated_at": 1795097696.0802739,
    "title": "GoalDiffusionPolicyV2 · 40,000 步",
    "family": "最高优先评测 · GoalDiffusionPolicyV2",
    "task_label": "挂杯",
@@ -18,7 +18,7 @@
    "live_groups": 0,
    "training": [
     {
-     "current": 36520,
+     "current": 36640,
      "target": 50000,
      "state": "running",
      "label": "GoalDiffusionPolicyV2"
@@ -110,7 +110,7 @@
    "checkpoint_step": 40000,
    "audited": false,
    "thread_metric": true,
-   "updated_at": 1795097668.4259322,
+   "updated_at": 1795097701.0319846,
    "title": "GoalPolicyV2 · 40,000 步",
    "family": "最高优先评测 · GoalPolicyV2",
    "task_label": "挂杯",
@@ -118,7 +118,7 @@
    "live_groups": 5,
    "training": [
     {
-     "current": 48680,
+     "current": 48800,
      "target": 50000,
      "state": "running",
      "label": "GoalPolicyV2"
@@ -209,7 +209,7 @@
    "expected": 100,
    "checkpoint_step": 40000,
    "audited": true,
-   "updated_at": 1795097672.784439,
+   "updated_at": 1795097703.0734482,
    "title": "换臂对齐 DINOv2 + LeRobot DP · Mode A · 40,000 步",
    "family": "LeRobot DP · Affordance + SE(3) Goal",
    "task_label": "挂杯",
@@ -293,7 +293,7 @@
    "expected": 100,
    "checkpoint_step": 40000,
    "audited": false,
-   "updated_at": 1795097672.784439,
+   "updated_at": 1795097703.0734482,
    "title": "换臂对齐 DINOv2 + LeRobot DP · Mode B · 40,000 步",
    "family": "LeRobot DP · Affordance + SE(3) Goal",
    "task_label": "挂杯",
@@ -348,7 +348,7 @@
      "name": "Kinova",
      "expected": 20,
      "completed": 0,
-     "pending": 3,
+     "pending": 4,
      "grasp": null,
      "grasp_unknown": 0,
      "hang": null,
@@ -1552,7 +1552,7 @@
    "task": "hang_cup",
    "expected": 100,
    "audited": false,
-   "updated_at": 1795097643.1862848,
+   "updated_at": 1795097685.0372956,
    "title": "DINOv2-B/14-reg4＋LeRobot DP · 视觉参与反传",
    "family": "LeRobot DP · 挂杯",
    "task_label": "挂杯",
@@ -5758,15 +5758,15 @@
  "completion_estimates": {
   "affordance_goal24_dpv2_40000": {
    "training": {
-    "finish_at": 1795101875.459016
+    "finish_at": 1795101853.617066
    },
    "checkpoint": {
-    "finish_at": 1795098750.9485111
+    "finish_at": 1795098741.6883295
    }
   },
   "affordance_goal24_v2_40000": {
    "training": {
-    "finish_at": 1795098029.5637796
+    "finish_at": 1795098029.2802553
    }
   },
   "hang_dino_joint_dp24_gpu0": {
@@ -5778,61 +5778,51 @@
    "training": {
     "finish_at": 1795100744.2709093
    }
-  },
-  "dp_transfer104_hang_resnet_dp": {
-   "evaluation": {
-    "finish_at": 1795100816.3839462
-   }
-  },
-  "dp_transfer104_coffee_plain_dp": {
-   "evaluation": {
-    "finish_at": 1795109548.72012
-   }
   }
  },
  "feeds": {
   "数据源 1": {
-   "age_seconds": 25.353314876556396,
+   "age_seconds": 55.38044357299805,
    "error": null
   },
   "数据源 2": {
-   "age_seconds": 5.695533990859985,
+   "age_seconds": 35.722662687301636,
    "error": null
   },
   "数据源 3": {
-   "age_seconds": 5.885026931762695,
+   "age_seconds": 35.912155628204346,
    "error": null
   },
   "数据源 4": {
-   "age_seconds": 5.712072849273682,
+   "age_seconds": 35.73920154571533,
    "error": null
   },
   "数据源 5": {
-   "age_seconds": 5.800970792770386,
+   "age_seconds": 35.828099489212036,
    "error": null
   },
   "数据源 6": {
-   "age_seconds": 76.22106051445007,
+   "age_seconds": 106.24818921089172,
    "error": "暂未更新"
   },
   "数据源 7": {
-   "age_seconds": 21980.596447706223,
+   "age_seconds": 22010.623576402664,
    "error": null
   },
   "数据源 8": {
-   "age_seconds": 13530.043964624405,
+   "age_seconds": 13560.071093320847,
    "error": null
   },
   "数据源 9": {
-   "age_seconds": 1.6584620475769043,
+   "age_seconds": 1.3965816497802734,
    "error": null
   },
   "数据源 10": {
-   "age_seconds": 6.0169689655303955,
+   "age_seconds": 3.4380452632904053,
    "error": null
   },
   "数据源 11": {
-   "age_seconds": 10.824045896530151,
+   "age_seconds": 8.389755964279175,
    "error": null
   }
  }
