@@ -1,5 +1,5 @@
 {
- "generated_at": 1795104219.6780088,
+ "generated_at": 1795104249.702859,
  "public_view": true,
  "rows": [
   {
@@ -8,7 +8,7 @@
    "task": "hang_cup",
    "expected": 100,
    "audited": false,
-   "updated_at": 1795104210.279593,
+   "updated_at": 1795104240.6496525,
    "title": "Franka400 LeRobot · DP · 跨本体对齐 · 冻结视觉",
    "family": "Franka400 LeRobot DP · 24→104",
    "task_label": "挂杯",
@@ -87,7 +87,7 @@
    "task": "hang_cup",
    "expected": 100,
    "audited": false,
-   "updated_at": 1795104210.279593,
+   "updated_at": 1795104240.6496525,
    "title": "Franka400 LeRobot · 纯 DP",
    "family": "Franka400 LeRobot DP · 24→104",
    "task_label": "挂杯",
@@ -95,7 +95,7 @@
    "live_groups": 0,
    "training": [
     {
-     "current": 13980,
+     "current": 14200,
      "target": 50000,
      "state": "running",
      "label": "DP"
@@ -160,7 +160,7 @@
    "task": "hang_cup",
    "expected": 100,
    "audited": false,
-   "updated_at": 1795104210.279593,
+   "updated_at": 1795104240.6496525,
    "title": "Franka400 LeRobot · DP · 跨本体对齐 · 联合微调",
    "family": "Franka400 LeRobot DP · 24→104",
    "task_label": "挂杯",
@@ -241,7 +241,7 @@
    "checkpoint_step": 40000,
    "audited": false,
    "thread_metric": true,
-   "updated_at": 1795104210.2792964,
+   "updated_at": 1795104242.6107428,
    "title": "GoalDiffusionPolicyV2 · 40,000 步",
    "family": "最高优先评测 · GoalDiffusionPolicyV2",
    "task_label": "挂杯",
@@ -304,16 +304,16 @@
     {
      "name": "Kinova",
      "expected": 20,
-     "completed": 18,
-     "pending": 2,
-     "grasp": 18,
+     "completed": 19,
+     "pending": 3,
+     "grasp": 19,
      "grasp_unknown": 0,
-     "hang": 13,
+     "hang": 14,
      "hang_unknown": 0,
      "place": null,
      "place_unknown": 0,
-     "thread": 15,
-     "thread_completed": 18,
+     "thread": 16,
+     "thread_completed": 19,
      "thread_unknown": 0
     },
     {
@@ -341,7 +341,7 @@
    "checkpoint_step": 40000,
    "audited": false,
    "thread_metric": true,
-   "updated_at": 1795104212.9725187,
+   "updated_at": 1795104245.5117385,
    "title": "GoalPolicyV2 · 40,000 步",
    "family": "最高优先评测 · GoalPolicyV2",
    "task_label": "挂杯",
@@ -5758,12 +5758,12 @@
  "completion_estimates": {
   "aghost_franka400_hang_plain": {
    "training": {
-    "finish_at": 1795108085.9212072
+    "finish_at": 1795108184.1522563
    }
   },
   "affordance_goal24_dpv2_40000": {
    "evaluation": {
-    "finish_at": 1795104279.528545
+    "finish_at": 1795104357.2911794
    }
   },
   "dp_transfer104_hang_resnet_dp": {
@@ -5774,51 +5774,51 @@
  },
  "feeds": {
   "数据源 1": {
-   "age_seconds": 8.092589616775513,
+   "age_seconds": 38.11743974685669,
    "error": null
   },
   "数据源 2": {
-   "age_seconds": 7.221766471862793,
+   "age_seconds": 37.24661660194397,
    "error": null
   },
   "数据源 3": {
-   "age_seconds": 7.474503040313721,
+   "age_seconds": 37.4993531703949,
    "error": null
   },
   "数据源 4": {
-   "age_seconds": 7.283491134643555,
+   "age_seconds": 37.30834126472473,
    "error": null
   },
   "数据源 5": {
-   "age_seconds": 7.346104621887207,
+   "age_seconds": 37.370954751968384,
    "error": null
   },
   "数据源 6": {
-   "age_seconds": 29.15422749519348,
+   "age_seconds": 59.17907762527466,
    "error": null
   },
   "数据源 7": {
-   "age_seconds": 28525.831555366516,
+   "age_seconds": 28555.856405496597,
    "error": null
   },
   "数据源 8": {
-   "age_seconds": 20075.2790722847,
+   "age_seconds": 20105.30392241478,
    "error": null
   },
   "数据源 9": {
-   "age_seconds": 5587.016291856766,
+   "age_seconds": 5617.041141986847,
    "error": null
   },
   "数据源 10": {
-   "age_seconds": 6.7054901123046875,
+   "age_seconds": 4.191120386123657,
    "error": null
   },
   "数据源 11": {
-   "age_seconds": 9.398712396621704,
+   "age_seconds": 7.092116117477417,
    "error": null
   },
   "数据源 12": {
-   "age_seconds": 9.398415803909302,
+   "age_seconds": 9.053206443786621,
    "error": null
   }
  }
