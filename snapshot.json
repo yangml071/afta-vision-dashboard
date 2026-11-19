@@ -1,5 +1,5 @@
 {
- "generated_at": 1795111395.45218,
+ "generated_at": 1795111425.4794476,
  "public_view": true,
  "rows": [
   {
@@ -8,7 +8,7 @@
    "task": "hang_cup",
    "expected": 100,
    "audited": false,
-   "updated_at": 1795111394.923948,
+   "updated_at": 1795111425.2803636,
    "title": "Franka400 LeRobot · DP · 跨本体对齐 · 冻结视觉",
    "family": "Franka400 LeRobot DP · 24→104",
    "task_label": "挂杯",
@@ -22,7 +22,7 @@
      "label": "视觉对齐"
     },
     {
-     "current": 21720,
+     "current": 21980,
      "target": 50000,
      "state": "running",
      "label": "DP"
@@ -87,12 +87,12 @@
    "task": "hang_cup",
    "expected": 100,
    "audited": false,
-   "updated_at": 1795111394.8093092,
+   "updated_at": 1795111425.1816492,
    "title": "Franka400 LeRobot · 纯 DP",
    "family": "Franka400 LeRobot DP · 24→104",
    "task_label": "挂杯",
    "connection": "online",
-   "live_groups": 7,
+   "live_groups": 6,
    "training": [
     {
      "current": 50000,
@@ -105,10 +105,10 @@
     {
      "name": "Franka",
      "expected": 20,
-     "completed": 0,
-     "grasp": null,
+     "completed": 4,
+     "grasp": 4,
      "grasp_unknown": 0,
-     "hang": null,
+     "hang": 2,
      "hang_unknown": 0,
      "place": null
     },
@@ -5679,62 +5679,67 @@
  "completion_estimates": {
   "aghost_franka400_hang_frozen": {
    "training": {
-    "finish_at": 1795115067.1427472
+    "finish_at": 1795115027.1267388
+   }
+  },
+  "aghost_franka400_hang_plain": {
+   "evaluation": {
+    "finish_at": 1795134752.009677
    }
   },
   "aghost_franka100_coffee_joint": {
    "evaluation": {
-    "finish_at": 1795115823.3121424
+    "finish_at": 1795118554.6297226
    }
   }
  },
  "feeds": {
   "数据源 1": {
-   "age_seconds": 11.95675277709961,
+   "age_seconds": 41.984020471572876,
    "error": null
   },
   "数据源 2": {
-   "age_seconds": 8.980903148651123,
+   "age_seconds": 39.00817084312439,
    "error": null
   },
   "数据源 3": {
-   "age_seconds": 9.145535469055176,
+   "age_seconds": 39.17280316352844,
    "error": null
   },
   "数据源 4": {
-   "age_seconds": 8.935937643051147,
+   "age_seconds": 38.963205337524414,
    "error": null
   },
   "数据源 5": {
-   "age_seconds": 9.053098917007446,
+   "age_seconds": 39.08036661148071,
    "error": null
   },
   "数据源 6": {
-   "age_seconds": 32.71308994293213,
+   "age_seconds": 62.740357637405396,
    "error": null
   },
   "数据源 7": {
-   "age_seconds": 35701.605726480484,
+   "age_seconds": 35731.63299417496,
    "error": null
   },
   "数据源 8": {
-   "age_seconds": 27251.053243398666,
+   "age_seconds": 27281.08051109314,
    "error": null
   },
   "数据源 9": {
-   "age_seconds": 12762.790462970734,
+   "age_seconds": 12792.817730665207,
    "error": null
   },
   "数据源 10": {
-   "age_seconds": 6383.651413679123,
+   "age_seconds": 6413.678681373596,
    "error": null
   },
   "数据源 11": {
-   "age_seconds": 6339.423328638077,
+   "age_seconds": 6369.45059633255,
    "error": null
   },
   "数据源 12": {
-   "age_seconds": 0.5282318592071533,
+   "age_seconds": 0.19908404350280762,
    "error": null
   }
  }
