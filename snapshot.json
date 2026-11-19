@@ -1,5 +1,5 @@
 {
- "generated_at": 1795097194.0755503,
+ "generated_at": 1795097224.1030025,
  "public_view": true,
  "rows": [
   {
@@ -10,7 +10,7 @@
    "checkpoint_step": 40000,
    "audited": false,
    "thread_metric": true,
-   "updated_at": 1795097187.855186,
+   "updated_at": 1795097220.6376479,
    "title": "GoalDiffusionPolicyV2 · 40,000 步",
    "family": "最高优先评测 · GoalDiffusionPolicyV2",
    "task_label": "挂杯",
@@ -18,7 +18,7 @@
    "live_groups": 0,
    "training": [
     {
-     "current": 35000,
+     "current": 35060,
      "target": 50000,
      "state": "running",
      "label": "GoalDiffusionPolicyV2"
@@ -110,7 +110,7 @@
    "checkpoint_step": 40000,
    "audited": false,
    "thread_metric": true,
-   "updated_at": 1795097188.5916088,
+   "updated_at": 1795097221.0838351,
    "title": "GoalPolicyV2 · 40,000 步",
    "family": "最高优先评测 · GoalPolicyV2",
    "task_label": "挂杯",
@@ -118,7 +118,7 @@
    "live_groups": 4,
    "training": [
     {
-     "current": 46920,
+     "current": 47040,
      "target": 50000,
      "state": "running",
      "label": "GoalPolicyV2"
@@ -144,7 +144,7 @@
      "name": "UR5e",
      "expected": 20,
      "completed": 0,
-     "pending": 0,
+     "pending": 1,
      "grasp": 0,
      "grasp_unknown": 0,
      "hang": 0,
@@ -204,17 +204,17 @@
   },
   {
    "id": "affordance_goal24_dp_A_40000",
-   "state": "testing",
+   "state": "confirming",
    "task": "hang_cup",
    "expected": 100,
    "checkpoint_step": 40000,
    "audited": false,
-   "updated_at": 1795097187.942558,
+   "updated_at": 1795097218.2439618,
    "title": "换臂对齐 DINOv2 + LeRobot DP · Mode A · 40,000 步",
    "family": "LeRobot DP · Affordance + SE(3) Goal",
    "task_label": "挂杯",
    "connection": "online",
-   "live_groups": 1,
+   "live_groups": 0,
    "training": [
     {
      "current": 50000,
@@ -275,9 +275,9 @@
     {
      "name": "Sawyer",
      "expected": 20,
-     "completed": 17,
-     "pending": 2,
-     "grasp": 17,
+     "completed": 20,
+     "pending": 0,
+     "grasp": 20,
      "grasp_unknown": 0,
      "hang": 5,
      "hang_unknown": 0,
@@ -293,12 +293,12 @@
    "expected": 100,
    "checkpoint_step": 40000,
    "audited": false,
-   "updated_at": 1795097187.942558,
+   "updated_at": 1795097218.2439618,
    "title": "换臂对齐 DINOv2 + LeRobot DP · Mode B · 40,000 步",
    "family": "LeRobot DP · Affordance + SE(3) Goal",
    "task_label": "挂杯",
    "connection": "online",
-   "live_groups": 9,
+   "live_groups": 10,
    "training": [
     {
      "current": 50000,
@@ -5758,15 +5758,15 @@
  "completion_estimates": {
   "affordance_goal24_dpv2_40000": {
    "training": {
-    "finish_at": 1795101869.2942119
+    "finish_at": 1795101970.130746
    },
    "checkpoint": {
-    "finish_at": 1795098748.3348613
+    "finish_at": 1795098791.0858343
    }
   },
   "affordance_goal24_v2_40000": {
    "training": {
-    "finish_at": 1795098033.1662316
+    "finish_at": 1795098032.3191574
    }
   },
   "aghost_franka100_hang_plain": {
@@ -5787,47 +5787,47 @@
  },
  "feeds": {
   "数据源 1": {
-   "age_seconds": 39.176087617874146,
+   "age_seconds": 69.20353984832764,
    "error": null
   },
   "数据源 2": {
-   "age_seconds": 8.486052513122559,
+   "age_seconds": 38.51350474357605,
    "error": null
   },
   "数据源 3": {
-   "age_seconds": 8.680440664291382,
+   "age_seconds": 38.70789289474487,
    "error": null
   },
   "数据源 4": {
-   "age_seconds": 8.49825930595398,
+   "age_seconds": 38.52571153640747,
    "error": null
   },
   "数据源 5": {
-   "age_seconds": 8.575209856033325,
+   "age_seconds": 38.602662086486816,
    "error": null
   },
   "数据源 6": {
-   "age_seconds": 31.12587809562683,
+   "age_seconds": 61.15333032608032,
    "error": null
   },
   "数据源 7": {
-   "age_seconds": 21500.229096889496,
+   "age_seconds": 21530.25654911995,
    "error": null
   },
   "数据源 8": {
-   "age_seconds": 13049.676613807678,
+   "age_seconds": 13079.704066038132,
    "error": null
   },
   "数据源 9": {
-   "age_seconds": 6.132992267608643,
+   "age_seconds": 5.8590407371521,
    "error": null
   },
   "数据源 10": {
-   "age_seconds": 5.483941555023193,
+   "age_seconds": 3.019167423248291,
    "error": null
   },
   "数据源 11": {
-   "age_seconds": 6.220364332199097,
+   "age_seconds": 3.4653546810150146,
    "error": null
   }
  }
