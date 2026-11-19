@@ -53,11 +53,11 @@ const VISUAL_PROFILES = new Map([
   [['lerobot24_resnet_franka400', 'requested_temporal_rgb_act_franka400'], RAW_RESNET, NO_ALIGNMENT, JOINT],
   [[
     'dp_transfer104_hang_resnet_dp', 'dp_transfer104_coffee_plain_dp', 'history_single_raw400_aghost_dp',
-    'aghost_franka100_hang_plain',
+    'aghost_franka400_hang_plain',
   ], '原始 ResNet18（从零训练）', NO_ALIGNMENT, JOINT],
-  [['aghost_franka100_coffee_frozen', 'aghost_franka100_hang_frozen'],
+  [['aghost_franka100_coffee_frozen', 'aghost_franka400_hang_frozen'],
     '双视角 ResNet18', ALIGNMENT, FROZEN],
-  [['aghost_franka100_coffee_joint', 'aghost_franka100_hang_joint'],
+  [['aghost_franka100_coffee_joint', 'aghost_franka400_hang_joint'],
     '双视角 ResNet18', ALIGNMENT, JOINT],
   // The 133 temporal comparison uses the distilled encoder.
   [['rgbact133_temporal_dinov2'], DINO_V2, '是 · 换臂特征蒸馏', FROZEN],
@@ -205,6 +205,9 @@ function metricTotal(rows, metric) {
 function totalGroup(row) {
   const pending = (row.groups || []).reduce((sum, group) => sum + (group.pending || 0), 0);
   const total = {name:'总计', expected:row.expected, completed:0, pending};
+  if (row.groups?.some(group => Number.isInteger(group.accepted))) {
+    total.accepted = row.groups.reduce((sum, group) => sum + group.accepted, 0);
+  }
   for (const metric of ['grasp','hang','place']) {
     const value = metricTotal([row],metric);
     total[metric] = value.completed ? value.successes : null;
@@ -248,7 +251,8 @@ function cell(row, body) {
   const group = body === '总计' ? totalGroup(row) : (row.groups || []).find(g => g.name === body);
   const metrics = selectedMetric === 'both' ? ['grasp', row.task === 'hang_cup' ? 'hang' : 'place'] : [selectedMetric];
   if (row.thread_metric && selectedMetric === 'both') metrics.splice(1, 0, 'thread');
-  const pending = group?.pending > 0 ? `<div class="fraction">已结束，待入账 ${num(group.pending)} 场</div>` : '';
+  const pending = group?.pending > 0 ? `<div class="fraction">${Number.isInteger(group.accepted) ?
+    '其中待正式入账' : '已结束，待入账'} ${num(group.pending)} 场</div>` : '';
   return `<td class="metric-cell">${metrics.map(m => measurement(group, m, row.task)).join('')}${pending}</td>`;
 }
 
@@ -308,7 +312,10 @@ function training(row) {
         aria-label="${escapeHTML(s.label)}">${amount}%</progress></div>`;
   }).join('');
   const completed = (row.groups || []).reduce((n, g) => n + (g.completed || 0), 0);
-  const evalText = completed ? `测试 ${completed}${row.expected ? ` / ${row.expected}` : ''} 次` :
+  const accepted = row.groups?.some(group => Number.isInteger(group.accepted)) ?
+    row.groups.reduce((n, group) => n + group.accepted, 0) : completed;
+  const evalText = accepted < completed ? `已跑完 ${num(completed)} / ${num(row.expected)} 场 · 正式入账 ${num(accepted)} 场` :
+    completed ? `测试 ${completed}${row.expected ? ` / ${row.expected}` : ''} 次` :
     row.expected ? `测试 0 / ${row.expected} 次` : '尚无正式测试';
   const active = (row.workers || []).filter(w => w.live !== false);
   const activeCount = row.live_groups ?? active.length;
@@ -344,6 +351,8 @@ function renderVisual([encoder, alignment, training]) {
 function renderRow(row) {
   return `<tr><td><button class="method" data-id="${escapeHTML(row.id)}">${escapeHTML(row.title)}</button>
     ${renderVisual(row.visual)}
+    ${row.state === 'stopped' && row.id.startsWith('aghost_franka100_hang_') && row.note ?
+      `<div class="sub">${escapeHTML(row.note)}</div>` : ''}
     <div class="sub">${escapeHTML(row.family)}${row.host ? ' · ' + escapeHTML(row.host) + ' 服务器' : ''}</div><div class="badges">
     <span class="badge ${escapeHTML(row.state)}">${escapeHTML(STATES[row.state] || row.state || '未登记')}</span>
     ${row.audited ? '<span class="badge complete">证据已审计</span>' : ''}
@@ -383,7 +392,7 @@ function render() {
   if (dialog.open) {
     const selected = rows.find(row => row.id === dialog.dataset.id);
     if (selected) {
-      $('detail-completion').innerHTML = renderCompletion(selected);
+      renderDetail(selected);
     } else {
       dialog.close();
       $('detail-content').replaceChildren();
@@ -436,10 +445,7 @@ function render() {
   }
 }
 
-function detail(id) {
-  const record = snapshot.rows.find(r => r.id === id);
-  if (!record) return;
-  const row = classifyRow(record);
+function renderDetail(row) {
   $('detail-content').innerHTML = `<div class="eyebrow">EXPERIMENT DETAIL</div><h2>${escapeHTML(row.title)}</h2>
     <p>${escapeHTML(row.taskName)} · ${escapeHTML(row.methodName)}</p>
     <p>${escapeHTML(row.family)}</p>${renderVisual(row.visual)}<div id="detail-completion">${renderCompletion(row)}</div>
@@ -452,6 +458,12 @@ ${escapeHTML(row.root || '')}
     <h4>正在执行</h4><pre>${escapeHTML(row.workers?.length ? JSON.stringify(row.workers,null,2) : '当前无执行组 / 未关联执行记录')}</pre>`}
     <h4>逐机械臂计数</h4><pre>${escapeHTML(JSON.stringify(row.groups,null,2))}</pre>
     ${row.accounting ? `<h4>统计状态</h4><pre>${escapeHTML(JSON.stringify(row.accounting,null,2))}</pre>` : ''}`;
+}
+
+function detail(id) {
+  const record = snapshot.rows.find(row => row.id === id);
+  if (!record) return;
+  renderDetail(classifyRow(record));
   $('detail').dataset.id = id;
   $('detail').showModal();
 }
@@ -461,34 +473,40 @@ function snapshotExpired() {
     Date.now() / 1000 - snapshot.generated_at > refreshSeconds * 4);
 }
 
-async function loadSnapshot() {
-  const url = new URL(dashboardConfig.snapshotUrl || '/api/snapshot', location.href);
-  const now = Date.now();
-  if (dashboardConfig.snapshotUrl) url.searchParams.set('t', Math.floor(now / (refreshSeconds * 1000)));
-  let raw = null;
+async function fetchPublicSnapshot(url, headers) {
   try {
-    const response = await fetch(url, {cache:'no-store'});
-    if (!response.ok) throw new Error(`HTTP ${response.status}`);
-    raw = await response.json();
-  } catch (error) {
-    if (!dashboardConfig.snapshotApi) throw error;
+    const response = await fetch(url, {cache:'no-store', credentials:'omit', headers,
+      signal:AbortSignal.timeout(4500)});
+    if (!response.ok) return null;
+    const data = await response.json();
+    return data?.public_view === true && Number.isFinite(data.generated_at) &&
+      Array.isArray(data.rows) && data.rows.length ? data : null;
+  } catch {
+    return null;
   }
-  const latest = Math.max(raw?.generated_at ?? 0, snapshot?.generated_at ?? 0);
-  if (dashboardConfig.snapshotApi && now / 1000 - latest > 45 && now - lastApiRefresh >= 90000) {
+}
+
+async function loadSnapshot() {
+  const live = await fetchPublicSnapshot(dashboardConfig.liveSnapshotUrl);
+  const now = Date.now();
+  let latest = live;
+  if (live && now / 1000 - live.generated_at <= 45 &&
+      live.generated_at >= (snapshot?.generated_at ?? 0)) return live;
+
+  const url = new URL(dashboardConfig.snapshotUrl);
+  url.searchParams.set('t', Math.floor(now / 30000));
+  const raw = await fetchPublicSnapshot(url);
+  if (raw && (!latest || raw.generated_at > latest.generated_at)) latest = raw;
+
+  const newestAt = Math.max(latest?.generated_at ?? 0, snapshot?.generated_at ?? 0);
+  if (now / 1000 - newestAt > 45 && now - lastApiRefresh >= 90000) {
     lastApiRefresh = now;
-    try {
-      const response = await fetch(dashboardConfig.snapshotApi, {cache:'no-store',
-        headers:{Accept:'application/vnd.github.raw+json'}});
-      if (response.ok) {
-        const data = await response.json();
-        if (!raw || data.generated_at > raw.generated_at) return data;
-      }
-    } catch {
-      // Keep the last snapshot available when GitHub's public API is rate limited or unreachable.
-    }
+    const data = await fetchPublicSnapshot(dashboardConfig.snapshotApi,
+      {Accept:'application/vnd.github.raw+json'});
+    if (data && (!latest || data.generated_at > latest.generated_at)) latest = data;
   }
-  if (!raw) throw new Error('暂时无法读取 GitHub 快照');
-  return raw;
+  if (!latest) throw new Error('暂时无法读取实验快照');
+  return latest;
 }
 
 async function refresh() {

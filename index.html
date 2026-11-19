@@ -1,12 +1,13 @@
 <!doctype html>
-<html lang="zh-CN" data-refresh-seconds="30"
+<html lang="zh-CN" data-refresh-seconds="15"
+  data-live-snapshot-url="https://afta-vision-dashboard.greatmonkey.chatgpt.site/api/snapshot"
   data-snapshot-api="https://api.github.com/repos/yangml071/afta-vision-dashboard/contents/snapshot.json?ref=live-data"
   data-snapshot-url="https://raw.githubusercontent.com/yangml071/afta-vision-dashboard/live-data/snapshot.json">
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src https://raw.githubusercontent.com https://api.github.com; base-uri 'none'">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src https://afta-vision-dashboard.greatmonkey.chatgpt.site https://raw.githubusercontent.com https://api.github.com; base-uri 'none'">
   <title>视觉表征实验 · 实时训练与测试</title>
-  <link rel="stylesheet" href="./style.css"><script src="./app.js" defer></script>
+  <link rel="stylesheet" href="./style.css"><script src="./app.js?v=live-8791" defer></script>
 </head>
 <body>
   <main>
@@ -14,7 +15,7 @@
       <div><div class="eyebrow">AFTA / VISION EXPERIMENTS</div><h1>视觉表征实验</h1>
         <p>训练进度、实时成功率与历史对比。</p></div>
       <div class="live"><span class="dot"></span><strong id="live-status">正在连接数据源</strong>
-        <small id="updated">每30秒自动刷新</small><button id="refresh">立即刷新</button></div>
+        <small id="updated">每15秒自动刷新</small><button id="refresh">立即刷新</button></div>
     </header>
     <div id="feed-alert" class="alert" role="status" hidden></div>
     <section class="summary" aria-label="实验概况">
