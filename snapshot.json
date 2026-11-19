@@ -1,5 +1,5 @@
 {
- "generated_at": 1795099505.8920763,
+ "generated_at": 1795099535.917723,
  "public_view": true,
  "rows": [
   {
@@ -10,15 +10,15 @@
    "checkpoint_step": 40000,
    "audited": false,
    "thread_metric": true,
-   "updated_at": 1795099496.0876865,
+   "updated_at": 1795099528.4666927,
    "title": "GoalDiffusionPolicyV2 · 40,000 步",
    "family": "最高优先评测 · GoalDiffusionPolicyV2",
    "task_label": "挂杯",
    "connection": "online",
-   "live_groups": 16,
+   "live_groups": 17,
    "training": [
     {
-     "current": 42000,
+     "current": 42040,
      "target": 50000,
      "state": "running",
      "label": "GoalDiffusionPolicyV2"
@@ -110,7 +110,7 @@
    "checkpoint_step": 40000,
    "audited": false,
    "thread_metric": true,
-   "updated_at": 1795099504.838071,
+   "updated_at": 1795099529.1912725,
    "title": "GoalPolicyV2 · 40,000 步",
    "family": "最高优先评测 · GoalPolicyV2",
    "task_label": "挂杯",
@@ -1543,6 +1543,79 @@
      "hang_unknown": 0,
      "place": null,
      "place_unknown": 0
+    }
+   ]
+  },
+  {
+   "id": "hang_dino_joint_dp24_gpu0",
+   "state": "testing",
+   "task": "hang_cup",
+   "expected": 100,
+   "audited": false,
+   "updated_at": 1795099512.527569,
+   "title": "DINOv2-B/14-reg4＋LeRobot DP · 视觉参与反传",
+   "family": "LeRobot DP · 挂杯",
+   "task_label": "挂杯",
+   "connection": "online",
+   "live_groups": 1,
+   "training": [
+    {
+     "current": 50000,
+     "target": 50000,
+     "state": "complete",
+     "label": "LeRobot DP"
+    }
+   ],
+   "groups": [
+    {
+     "name": "Franka",
+     "expected": 20,
+     "completed": 20,
+     "grasp": 19,
+     "grasp_unknown": 0,
+     "hang": 15,
+     "hang_unknown": 0,
+     "place": null
+    },
+    {
+     "name": "UR5e",
+     "expected": 20,
+     "completed": 20,
+     "grasp": 20,
+     "grasp_unknown": 0,
+     "hang": 9,
+     "hang_unknown": 0,
+     "place": null
+    },
+    {
+     "name": "xArm7",
+     "expected": 20,
+     "completed": 16,
+     "grasp": 16,
+     "grasp_unknown": 0,
+     "hang": 7,
+     "hang_unknown": 0,
+     "place": null
+    },
+    {
+     "name": "Kinova",
+     "expected": 20,
+     "completed": 16,
+     "grasp": 15,
+     "grasp_unknown": 0,
+     "hang": 6,
+     "hang_unknown": 0,
+     "place": null
+    },
+    {
+     "name": "Sawyer",
+     "expected": 20,
+     "completed": 12,
+     "grasp": 10,
+     "grasp_unknown": 0,
+     "hang": 2,
+     "hang_unknown": 0,
+     "place": null
     }
    ]
   },
@@ -3310,79 +3383,6 @@
      "grasp": 20,
      "grasp_unknown": 0,
      "hang": 1,
-     "hang_unknown": 0,
-     "place": null
-    }
-   ]
-  },
-  {
-   "id": "hang_dino_joint_dp24_gpu0",
-   "state": "testing",
-   "task": "hang_cup",
-   "expected": 100,
-   "audited": false,
-   "updated_at": 1795099487.4555733,
-   "title": "DINOv2-B/14-reg4＋LeRobot DP · 视觉参与反传",
-   "family": "LeRobot DP · 挂杯",
-   "task_label": "挂杯",
-   "connection": "online",
-   "live_groups": 1,
-   "training": [
-    {
-     "current": 50000,
-     "target": 50000,
-     "state": "complete",
-     "label": "LeRobot DP"
-    }
-   ],
-   "groups": [
-    {
-     "name": "Franka",
-     "expected": 20,
-     "completed": 20,
-     "grasp": 19,
-     "grasp_unknown": 0,
-     "hang": 15,
-     "hang_unknown": 0,
-     "place": null
-    },
-    {
-     "name": "UR5e",
-     "expected": 20,
-     "completed": 20,
-     "grasp": 20,
-     "grasp_unknown": 0,
-     "hang": 9,
-     "hang_unknown": 0,
-     "place": null
-    },
-    {
-     "name": "xArm7",
-     "expected": 20,
-     "completed": 16,
-     "grasp": 16,
-     "grasp_unknown": 0,
-     "hang": 7,
-     "hang_unknown": 0,
-     "place": null
-    },
-    {
-     "name": "Kinova",
-     "expected": 20,
-     "completed": 16,
-     "grasp": 15,
-     "grasp_unknown": 0,
-     "hang": 6,
-     "hang_unknown": 0,
-     "place": null
-    },
-    {
-     "name": "Sawyer",
-     "expected": 20,
-     "completed": 12,
-     "grasp": 10,
-     "grasp_unknown": 0,
-     "hang": 2,
      "hang_unknown": 0,
      "place": null
     }
@@ -5758,7 +5758,7 @@
  "completion_estimates": {
   "affordance_goal24_dpv2_40000": {
    "training": {
-    "finish_at": 1795101982.1639757
+    "finish_at": 1795102079.9513516
    }
   },
   "aghost_franka100_hang_plain": {
@@ -5769,47 +5769,47 @@
  },
  "feeds": {
   "数据源 1": {
-   "age_seconds": 29.955350399017334,
+   "age_seconds": 59.98099708557129,
    "error": null
   },
   "数据源 2": {
-   "age_seconds": 14.997478723526001,
+   "age_seconds": 45.023125410079956,
    "error": null
   },
   "数据源 3": {
-   "age_seconds": 15.141639232635498,
+   "age_seconds": 45.16728591918945,
    "error": null
   },
   "数据源 4": {
-   "age_seconds": 15.006631851196289,
+   "age_seconds": 45.032278537750244,
    "error": null
   },
   "数据源 5": {
-   "age_seconds": 15.085929870605469,
+   "age_seconds": 45.111576557159424,
    "error": null
   },
   "数据源 6": {
-   "age_seconds": 40.793665409088135,
+   "age_seconds": 70.81931209564209,
    "error": null
   },
   "数据源 7": {
-   "age_seconds": 23812.045622825623,
+   "age_seconds": 23842.071269512177,
    "error": null
   },
   "数据源 8": {
-   "age_seconds": 15361.493139743805,
+   "age_seconds": 15391.518786430359,
    "error": null
   },
   "数据源 9": {
-   "age_seconds": 873.2303593158722,
+   "age_seconds": 903.2560060024261,
    "error": null
   },
   "数据源 10": {
-   "age_seconds": 1.0540051460266113,
+   "age_seconds": 6.726450443267822,
    "error": null
   },
   "数据源 11": {
-   "age_seconds": 9.804389715194702,
+   "age_seconds": 7.451030254364014,
    "error": null
   }
  }
