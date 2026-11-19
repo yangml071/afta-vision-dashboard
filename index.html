@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="zh-CN" data-refresh-seconds="30"
+  data-snapshot-url="https://raw.githubusercontent.com/yangml071/afta-vision-dashboard/live-data/snapshot.json">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src https://raw.githubusercontent.com; base-uri 'none'">
+  <title>视觉表征实验 · 实时训练与测试</title>
+  <link rel="stylesheet" href="./style.css"><script src="./app.js" defer></script>
+</head>
+<body>
+  <main>
+    <header class="hero">
+      <div><div class="eyebrow">AFTA / VISION EXPERIMENTS</div><h1>视觉表征实验</h1>
+        <p>训练进度、实时成功率与历史对比。</p></div>
+      <div class="live"><span class="dot"></span><strong id="live-status">正在连接数据源</strong>
+        <small id="updated">每30秒自动刷新</small><button id="refresh">立即刷新</button></div>
+    </header>
+    <div id="feed-alert" class="alert" role="status" hidden></div>
+    <section class="summary" aria-label="实验概况">
+      <div><span>实验与独立运行记录</span><strong id="records">—</strong></div>
+      <div><span>方法分组</span><strong id="methods">—</strong></div>
+      <div><span>训练中</span><strong id="training">—</strong></div>
+      <div><span>测试中</span><strong id="testing">—</strong></div>
+    </section>
+    <section class="toolbar" aria-label="筛选实验">
+      <label class="search"><span class="sr-only">搜索实验</span><input id="search" type="search"
+        placeholder="搜索 DINO、ACT、BodyScene…"></label>
+      <label><span class="sr-only">任务</span><select id="task"><option value="">全部任务</option></select></label>
+      <label><span class="sr-only">方法</span><select id="method-filter"><option value="">全部方法</option></select></label>
+      <label><span class="sr-only">对比组</span><select id="family"><option value="">全部对比组</option></select></label>
+      <label><span class="sr-only">状态</span><select id="state"><option value="">全部状态</option>
+        <option value="active">训练 / 测试中</option><option value="complete">已完成</option>
+        <option value="stopped">已停止</option><option value="error">异常</option></select></label>
+    </section>
+    <section class="totals-panel" aria-label="当前筛选范围总成功率"><div class="totals-heading">
+      <h2>总成功率</h2><span>当前筛选范围 · 按正式试次数加权汇总</span></div>
+      <div class="totals-grid"><div><span>总抓取成功率</span><strong id="total-grasp-rate">—</strong>
+        <small id="total-grasp-count">尚未测试</small></div><div><span>总挂杯成功率</span>
+        <strong id="total-hang-rate">—</strong><small id="total-hang-count">尚未测试</small></div>
+        <div><span>总放置成功率</span><strong id="total-place-rate">—</strong>
+        <small id="total-place-count">尚未测试</small></div></div>
+      <p>这里汇总所选实验记录，不同协议仍分别比较；每个方法的五机械臂总计见表格“总计”列。</p>
+    </section>
+    <div class="table-heading"><div><h2>训练与闭环测试</h2><p id="visible-count">载入记录中…</p></div>
+      <div class="table-actions">
+        <div class="segments" role="group" aria-label="成功率指标">
+          <button data-metric="both" class="selected" aria-pressed="true">抓取＋任务</button>
+          <button data-metric="grasp" aria-pressed="false">抓取</button>
+          <button data-metric="hang" aria-pressed="false">挂杯</button>
+          <button data-metric="place" aria-pressed="false">放置</button>
+        </div>
+        <button id="edit-records" aria-expanded="false" aria-controls="record-editor" disabled>编辑</button>
+      </div></div>
+    <section id="record-editor" aria-label="编辑看板记录" hidden>
+      <p>点击记录旁的「删除」，将它从此浏览器的看板和统计中移除。</p>
+      <details id="removed-records" hidden>
+        <summary id="removed-count"></summary>
+        <ul id="removed-list"></ul>
+      </details>
+      <p id="edit-status" role="status"></p>
+    </section>
+    <p class="definition">百分比＝确认成功 / 已完成正式场次；未知结果保留分母。未测试显示“—”，
+      不同数据与协议按组展示，不能直接混合比较。</p>
+    <section id="experiments" aria-live="polite"><div class="empty">正在读取真实实验记录…</div></section>
+    <footer>点击实验名称查看逐机械臂计数。</footer>
+  </main>
+  <dialog id="detail"><button id="close-detail" aria-label="关闭详情">×</button><div id="detail-content"></div></dialog>
+</body></html>
