@@ -1,5 +1,5 @@
 {
- "generated_at": 1795113887.4230897,
+ "generated_at": 1795113917.449945,
  "public_view": true,
  "rows": [
   {
@@ -8,7 +8,7 @@
    "task": "leek",
    "expected": 100,
    "audited": false,
-   "updated_at": 1795113877.6533847,
+   "updated_at": 1795113899.1710875,
    "title": "韭菜 · Franka100 LeRobot · 纯 DP",
    "family": "韭菜 · Franka100 LeRobot DP",
    "task_label": "韭菜",
@@ -16,7 +16,7 @@
    "live_groups": 0,
    "training": [
     {
-     "current": 5060,
+     "current": 5300,
      "target": 50000,
      "state": "running",
      "label": "DP"
@@ -81,7 +81,7 @@
    "task": "leek",
    "expected": 100,
    "audited": false,
-   "updated_at": 1795113877.6533847,
+   "updated_at": 1795113899.1710875,
    "title": "韭菜 · Franka100 LeRobot · DP · 跨本体对齐 · 冻结视觉",
    "family": "韭菜 · Franka100 LeRobot DP",
    "task_label": "韭菜",
@@ -160,7 +160,7 @@
    "task": "hang_cup",
    "expected": 100,
    "audited": false,
-   "updated_at": 1795113885.9120111,
+   "updated_at": 1795113916.3030224,
    "title": "Franka400 LeRobot · DP · 跨本体对齐 · 冻结视觉",
    "family": "Franka400 LeRobot DP · 24→104",
    "task_label": "挂杯",
@@ -174,7 +174,7 @@
      "label": "视觉对齐"
     },
     {
-     "current": 40620,
+     "current": 40900,
      "target": 50000,
      "state": "running",
      "label": "DP"
@@ -239,7 +239,7 @@
    "task": "hang_cup",
    "expected": 100,
    "audited": false,
-   "updated_at": 1795113885.808374,
+   "updated_at": 1795113916.1851647,
    "title": "Franka400 LeRobot · 纯 DP",
    "family": "Franka400 LeRobot DP · 24→104",
    "task_label": "挂杯",
@@ -314,7 +314,7 @@
    "checkpoint_step": 50000,
    "audited": false,
    "thread_metric": true,
-   "updated_at": 1795113862.372062,
+   "updated_at": 1795113913.4672236,
    "title": "Franka400 挂杯 · GoalDiffusionPolicyV2.1",
    "family": "GoalDiffusionPolicyV2.1",
    "task_label": "挂杯",
@@ -322,7 +322,7 @@
    "live_groups": 0,
    "training": [
     {
-     "current": 640,
+     "current": 720,
      "target": 50000,
      "state": "running",
      "label": "Franka400 挂杯"
@@ -409,7 +409,7 @@
    "checkpoint_step": 50000,
    "audited": false,
    "thread_metric": false,
-   "updated_at": 1795113862.372062,
+   "updated_at": 1795113913.4672236,
    "title": "Franka100 咖啡机 · GoalDiffusionPolicyV2.1",
    "family": "GoalDiffusionPolicyV2.1",
    "task_label": "咖啡机放杯",
@@ -6021,70 +6021,75 @@
  "completion_estimates": {
   "franka100_dp_leek_plain": {
    "training": {
-    "finish_at": 1795123446.0817342
+    "finish_at": 1795120541.8963215
    }
   },
   "aghost_franka400_hang_frozen": {
    "training": {
-    "finish_at": 1795114981.8542438
+    "finish_at": 1795114953.0986757
+   }
+  },
+  "goal_diffusion_v21_hang_50000": {
+   "training": {
+    "finish_at": 1795152049.7378626
    }
   }
  },
  "feeds": {
   "数据源 1": {
-   "age_seconds": 6.5963451862335205,
+   "age_seconds": 36.62320041656494,
    "error": null
   },
   "数据源 2": {
-   "age_seconds": 3.200164318084717,
+   "age_seconds": 33.22701954841614,
    "error": null
   },
   "数据源 3": {
-   "age_seconds": 3.3843259811401367,
+   "age_seconds": 33.41118121147156,
    "error": null
   },
   "数据源 4": {
-   "age_seconds": 3.2596778869628906,
+   "age_seconds": 33.28653311729431,
    "error": null
   },
   "数据源 5": {
-   "age_seconds": 3.3067662715911865,
+   "age_seconds": 33.33362150192261,
    "error": null
   },
   "数据源 6": {
-   "age_seconds": 26.727296113967896,
+   "age_seconds": 56.754151344299316,
    "error": null
   },
   "数据源 7": {
-   "age_seconds": 38193.57663631439,
+   "age_seconds": 38223.60349154472,
    "error": null
   },
   "数据源 8": {
-   "age_seconds": 29743.024153232574,
+   "age_seconds": 29773.051008462906,
    "error": null
   },
   "数据源 9": {
-   "age_seconds": 15254.761372804642,
+   "age_seconds": 15284.788228034973,
    "error": null
   },
   "数据源 10": {
-   "age_seconds": 8875.622323513031,
+   "age_seconds": 8905.649178743362,
    "error": null
   },
   "数据源 11": {
-   "age_seconds": 8831.394238471985,
+   "age_seconds": 8861.421093702316,
    "error": null
   },
   "数据源 12": {
-   "age_seconds": 24.378846645355225,
+   "age_seconds": 2.914921522140503,
    "error": null
   },
   "数据源 13": {
-   "age_seconds": 1.5110785961151123,
+   "age_seconds": 1.1469225883483887,
    "error": null
   },
   "数据源 14": {
-   "age_seconds": 9.769705057144165,
+   "age_seconds": 18.278857469558716,
    "error": null
   }
  }
