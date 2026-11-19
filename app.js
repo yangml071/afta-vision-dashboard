@@ -109,6 +109,7 @@ const escapeHTML = x => String(x ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','
 let snapshot = null, selectedMetric = 'both', fetching = false, refreshError = null;
 const dashboardConfig = typeof document === 'undefined' ? {} : document.documentElement.dataset;
 const refreshSeconds = Number(dashboardConfig.refreshSeconds) || 15;
+let lastApiRefresh = 0;
 const REMOVED_RECORDS_KEY = 'afta.visual-dashboard.removed-records';
 let editing = false, removedRecords = new Set();
 const num = x => Number.isFinite(x) ? x.toLocaleString('zh-CN') : '—';
@@ -460,15 +461,41 @@ function snapshotExpired() {
     Date.now() / 1000 - snapshot.generated_at > refreshSeconds * 4);
 }
 
+async function loadSnapshot() {
+  const url = new URL(dashboardConfig.snapshotUrl || '/api/snapshot', location.href);
+  const now = Date.now();
+  if (dashboardConfig.snapshotUrl) url.searchParams.set('t', Math.floor(now / (refreshSeconds * 1000)));
+  let raw = null;
+  try {
+    const response = await fetch(url, {cache:'no-store'});
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    raw = await response.json();
+  } catch (error) {
+    if (!dashboardConfig.snapshotApi) throw error;
+  }
+  const latest = Math.max(raw?.generated_at ?? 0, snapshot?.generated_at ?? 0);
+  if (dashboardConfig.snapshotApi && now / 1000 - latest > 45 && now - lastApiRefresh >= 90000) {
+    lastApiRefresh = now;
+    try {
+      const response = await fetch(dashboardConfig.snapshotApi, {cache:'no-store',
+        headers:{Accept:'application/vnd.github.raw+json'}});
+      if (response.ok) {
+        const data = await response.json();
+        if (!raw || data.generated_at > raw.generated_at) return data;
+      }
+    } catch {
+      // Keep the last snapshot available when GitHub's public API is rate limited or unreachable.
+    }
+  }
+  if (!raw) throw new Error('暂时无法读取 GitHub 快照');
+  return raw;
+}
+
 async function refresh() {
   if (fetching) return;
   fetching = true;
   try {
-    const url = new URL(dashboardConfig.snapshotUrl || '/api/snapshot', location.href);
-    if (dashboardConfig.snapshotUrl) url.searchParams.set('t', Math.floor(Date.now() / (refreshSeconds * 1000)));
-    const response = await fetch(url,{cache:'no-store'});
-    if (!response.ok) throw new Error(`HTTP ${response.status}`);
-    const next = await response.json();
+    const next = await loadSnapshot();
     if (!snapshot || next.generated_at >= snapshot.generated_at) snapshot = next;
     refreshError = null;
     render();
