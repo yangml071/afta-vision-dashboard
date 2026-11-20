@@ -1,5 +1,5 @@
 {
- "generated_at": 1795218186.2143688,
+ "generated_at": 1795218216.2346065,
  "public_view": true,
  "rows": [
   {
@@ -504,12 +504,12 @@
    "checkpoint_step": 50000,
    "audited": false,
    "thread_metric": false,
-   "updated_at": 1795218170.311043,
+   "updated_at": 1795218201.3114028,
    "title": "Franka100 咖啡机 · affgoalDP",
    "family": "affgoalDP",
    "task_label": "咖啡机放杯",
    "connection": "online",
-   "live_groups": 2,
+   "live_groups": 1,
    "training": [
     {
      "current": 50000,
@@ -578,16 +578,16 @@
     {
      "name": "Sawyer",
      "expected": 20,
-     "completed": 12,
-     "grasp": 12,
+     "completed": 16,
+     "grasp": 16,
      "grasp_unknown": 0,
      "hang": null,
-     "hang_unknown": 12,
-     "place": 6,
+     "hang_unknown": 16,
+     "place": 7,
      "place_unknown": 0,
      "thread": null,
-     "thread_completed": 12,
-     "thread_unknown": 12
+     "thread_completed": 16,
+     "thread_unknown": 16
     }
    ]
   },
@@ -599,7 +599,7 @@
    "checkpoint_step": 50000,
    "audited": true,
    "thread_metric": false,
-   "updated_at": 1795218170.311043,
+   "updated_at": 1795218201.3114028,
    "title": "Franka100 韭菜 · affgoalDP",
    "family": "affgoalDP",
    "task_label": "韭菜放切板",
@@ -694,7 +694,7 @@
    "checkpoint_step": 50000,
    "audited": true,
    "thread_metric": false,
-   "updated_at": 1795218170.311043,
+   "updated_at": 1795218201.3114028,
    "title": "Franka100 咖啡机 · affgoal_dpV1",
    "family": "affgoal_dpV1",
    "task_label": "咖啡机放杯",
@@ -789,7 +789,7 @@
    "checkpoint_step": 50000,
    "audited": true,
    "thread_metric": false,
-   "updated_at": 1795218170.311043,
+   "updated_at": 1795218201.3114028,
    "title": "Franka100 韭菜 · affgoal_dpV1",
    "family": "affgoal_dpV1",
    "task_label": "韭菜放切板",
@@ -1074,7 +1074,7 @@
    "checkpoint_step": 50000,
    "audited": true,
    "thread_metric": false,
-   "updated_at": 1795218181.215202,
+   "updated_at": 1795218202.0664988,
    "title": "Franka100 咖啡机 · GoalDiffusionPolicyV2 · GPU0",
    "family": "GoalDiffusionPolicyV2",
    "task_label": "咖啡机放杯",
@@ -1169,7 +1169,7 @@
    "checkpoint_step": 50000,
    "audited": false,
    "thread_metric": false,
-   "updated_at": 1795218181.0094438,
+   "updated_at": 1795218201.8595903,
    "title": "Franka100 咖啡机 · GoalDiffusionPolicyV2 · GPU1",
    "family": "GoalDiffusionPolicyV2",
    "task_label": "咖啡机放杯",
@@ -1264,12 +1264,12 @@
    "checkpoint_step": 50000,
    "audited": false,
    "thread_metric": false,
-   "updated_at": 1795218181.215202,
+   "updated_at": 1795218202.0664988,
    "title": "Franka100 韭菜 · GoalDiffusionPolicyV2",
    "family": "GoalDiffusionPolicyV2",
    "task_label": "韭菜放切板",
    "connection": "online",
-   "live_groups": 3,
+   "live_groups": 2,
    "training": [
     {
      "current": 50000,
@@ -1324,16 +1324,16 @@
     {
      "name": "Kinova",
      "expected": 20,
-     "completed": 16,
-     "grasp": 9,
+     "completed": 20,
+     "grasp": 11,
      "grasp_unknown": 0,
      "hang": null,
-     "hang_unknown": 16,
-     "place": 9,
+     "hang_unknown": 20,
+     "place": 11,
      "place_unknown": 0,
      "thread": null,
-     "thread_completed": 9,
-     "thread_unknown": 9
+     "thread_completed": 11,
+     "thread_unknown": 11
     },
     {
      "name": "Sawyer",
@@ -7159,91 +7159,96 @@
   }
  ],
  "completion_estimates": {
+  "affgoal_franka100_affgoal_coffee_50000": {
+   "evaluation": {
+    "finish_at": 1795218877.8904178
+   }
+  },
   "goal_diffusion_franka100_v2_leek_50000": {
    "evaluation": {
-    "finish_at": 1795218527.0722208
+    "finish_at": 1795218447.2244227
    }
   }
  },
  "feeds": {
   "数据源 1": {
-   "age_seconds": 103457.51499533653,
+   "age_seconds": 103487.53523302078,
    "error": null
   },
   "数据源 2": {
-   "age_seconds": 0.5418977737426758,
+   "age_seconds": 30.562135457992554,
    "error": null
   },
   "数据源 3": {
-   "age_seconds": 0.7076058387756348,
+   "age_seconds": 30.727843523025513,
    "error": null
   },
   "数据源 4": {
-   "age_seconds": 0.5834777355194092,
+   "age_seconds": 30.603715419769287,
    "error": null
   },
   "数据源 5": {
-   "age_seconds": 0.6233282089233398,
+   "age_seconds": 30.643565893173218,
    "error": null
   },
   "数据源 6": {
-   "age_seconds": 23.625022888183594,
+   "age_seconds": 53.64526057243347,
    "error": null
   },
   "数据源 7": {
-   "age_seconds": 142492.36791539192,
+   "age_seconds": 142522.38815307617,
    "error": null
   },
   "数据源 8": {
-   "age_seconds": 134041.8154323101,
+   "age_seconds": 134071.83566999435,
    "error": null
   },
   "数据源 9": {
-   "age_seconds": 119553.55265188217,
+   "age_seconds": 119583.57288956642,
    "error": null
   },
   "数据源 10": {
-   "age_seconds": 113174.41360259056,
+   "age_seconds": 113204.43384027481,
    "error": null
   },
   "数据源 11": {
-   "age_seconds": 113130.18551754951,
+   "age_seconds": 113160.20575523376,
    "error": null
   },
   "数据源 12": {
-   "age_seconds": 57342.64460659027,
+   "age_seconds": 57372.66484427452,
    "error": null
   },
   "数据源 13": {
-   "age_seconds": 4.294785737991333,
+   "age_seconds": 13.39020586013794,
    "error": null
   },
   "数据源 14": {
-   "age_seconds": 37767.44198489189,
+   "age_seconds": 37797.46222257614,
    "error": null
   },
   "数据源 15": {
-   "age_seconds": 33447.78921031952,
+   "age_seconds": 33477.80944800377,
    "error": null
   },
   "数据源 16": {
-   "age_seconds": 15.087870597839355,
+   "age_seconds": 14.266971349716187,
    "error": null
   },
   "数据源 17": {
-   "age_seconds": 10681.77159690857,
+   "age_seconds": 10711.79183459282,
    "error": null
   },
   "数据源 18": {
-   "age_seconds": 9128.286605596542,
+   "age_seconds": 9158.306843280792,
    "error": null
   },
   "数据源 19": {
-   "age_seconds": 94900.88604235649,
+   "age_seconds": 94930.90628004074,
    "error": null
   },
   "数据源 20": {
-   "age_seconds": 77351.99666237831,
+   "age_seconds": 77382.01690006256,
    "error": null
   }
  }
