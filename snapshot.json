@@ -1,5 +1,5 @@
 {
- "generated_at": 1795175524.2249274,
+ "generated_at": 1795175554.2521646,
  "public_view": true,
  "rows": [
   {
@@ -314,7 +314,7 @@
    "checkpoint_step": 50000,
    "audited": false,
    "thread_metric": true,
-   "updated_at": 1795175503.2828808,
+   "updated_at": 1795175543.8180833,
    "title": "Franka400 挂杯 · affgoal_dpV1",
    "family": "affgoal_dpV1",
    "task_label": "挂杯",
@@ -322,7 +322,7 @@
    "live_groups": 0,
    "training": [
     {
-     "current": 37280,
+     "current": 37560,
      "target": 50000,
      "state": "running",
      "label": "Franka400 挂杯"
@@ -409,12 +409,12 @@
    "checkpoint_step": 50000,
    "audited": false,
    "thread_metric": true,
-   "updated_at": 1795175505.6964757,
+   "updated_at": 1795175545.2509909,
    "title": "Franka400 挂杯 · affgoalDP",
    "family": "affgoalDP",
    "task_label": "挂杯",
    "connection": "online",
-   "live_groups": 19,
+   "live_groups": 20,
    "training": [
     {
      "current": 50000,
@@ -504,12 +504,12 @@
    "checkpoint_step": 50000,
    "audited": false,
    "thread_metric": false,
-   "updated_at": 1795175492.6787388,
+   "updated_at": 1795175545.5805197,
    "title": "Franka100 咖啡机 · GoalDiffusionPolicyV2 · GPU0",
    "family": "GoalDiffusionPolicyV2",
    "task_label": "咖啡机放杯",
    "connection": "online",
-   "live_groups": 3,
+   "live_groups": 1,
    "training": [
     {
      "current": 50000,
@@ -522,16 +522,16 @@
     {
      "name": "Franka",
      "expected": 20,
-     "completed": 3,
-     "grasp": 1,
+     "completed": 5,
+     "grasp": 2,
      "grasp_unknown": 0,
      "hang": null,
-     "hang_unknown": 3,
+     "hang_unknown": 5,
      "place": 0,
      "place_unknown": 0,
      "thread": null,
-     "thread_completed": 1,
-     "thread_unknown": 1
+     "thread_completed": 2,
+     "thread_unknown": 2
     },
     {
      "name": "UR5e",
@@ -599,7 +599,7 @@
    "checkpoint_step": 50000,
    "audited": false,
    "thread_metric": false,
-   "updated_at": 1795175492.467602,
+   "updated_at": 1795175545.3803144,
    "title": "Franka100 咖啡机 · GoalDiffusionPolicyV2 · GPU1",
    "family": "GoalDiffusionPolicyV2",
    "task_label": "咖啡机放杯",
@@ -694,7 +694,7 @@
    "checkpoint_step": 50000,
    "audited": false,
    "thread_metric": false,
-   "updated_at": 1795175492.6787388,
+   "updated_at": 1795175545.5805197,
    "title": "Franka100 韭菜 · GoalDiffusionPolicyV2",
    "family": "GoalDiffusionPolicyV2",
    "task_label": "韭菜放切板",
@@ -6591,82 +6591,82 @@
  "completion_estimates": {
   "affgoal_dp_v1_hang_50000": {
    "training": {
-    "finish_at": 1795177272.357527
+    "finish_at": 1795177281.4620104
    }
   },
   "goal_diffusion_franka100_v2_coffee_50000": {
    "evaluation": {
-    "finish_at": 1795178168.823295
+    "finish_at": 1795177693.7785692
    }
   }
  },
  "feeds": {
   "数据源 1": {
-   "age_seconds": 60795.52555394173,
+   "age_seconds": 60825.55279111862,
    "error": null
   },
   "数据源 2": {
-   "age_seconds": 11.18337082862854,
+   "age_seconds": 41.21060800552368,
    "error": null
   },
   "数据源 3": {
-   "age_seconds": 11.295793294906616,
+   "age_seconds": 41.32303047180176,
    "error": null
   },
   "数据源 4": {
-   "age_seconds": 11.116419076919556,
+   "age_seconds": 41.1436562538147,
    "error": null
   },
   "数据源 5": {
-   "age_seconds": 11.183733701705933,
+   "age_seconds": 41.210970878601074,
    "error": null
   },
   "数据源 6": {
-   "age_seconds": 36.7276291847229,
+   "age_seconds": 66.75486636161804,
    "error": null
   },
   "数据源 7": {
-   "age_seconds": 99830.37847399712,
+   "age_seconds": 99860.40571117401,
    "error": null
   },
   "数据源 8": {
-   "age_seconds": 91379.8259909153,
+   "age_seconds": 91409.8532280922,
    "error": null
   },
   "数据源 9": {
-   "age_seconds": 76891.56321048737,
+   "age_seconds": 76921.59044766426,
    "error": null
   },
   "数据源 10": {
-   "age_seconds": 70512.42416119576,
+   "age_seconds": 70542.45139837265,
    "error": null
   },
   "数据源 11": {
-   "age_seconds": 70468.19607615471,
+   "age_seconds": 70498.2233133316,
    "error": null
   },
   "数据源 12": {
-   "age_seconds": 14680.655165195465,
+   "age_seconds": 14710.68240237236,
    "error": null
   },
   "数据源 13": {
-   "age_seconds": 24.693333387374878,
+   "age_seconds": 4.1168529987335205,
    "error": null
   },
   "数据源 14": {
-   "age_seconds": 14.295489311218262,
+   "age_seconds": 4.958095550537109,
    "error": null
   },
   "数据源 15": {
-   "age_seconds": 15.431665182113647,
+   "age_seconds": 8.642934322357178,
    "error": null
   },
   "数据源 16": {
-   "age_seconds": 52238.896600961685,
+   "age_seconds": 52268.92383813858,
    "error": null
   },
   "数据源 17": {
-   "age_seconds": 34690.007220983505,
+   "age_seconds": 34720.0344581604,
    "error": null
   }
  }
