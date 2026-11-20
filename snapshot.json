@@ -1,5 +1,5 @@
 {
- "generated_at": 1795200623.8122385,
+ "generated_at": 1795200653.8392248,
  "public_view": true,
  "rows": [
   {
@@ -314,7 +314,7 @@
    "checkpoint_step": 50000,
    "audited": false,
    "thread_metric": true,
-   "updated_at": 1795200614.786189,
+   "updated_at": 1795200635.8032482,
    "title": "Franka400 挂杯 · AffGoalDP-Win3x3-Sparse",
    "family": "AffGoalDP-Win3x3-Sparse",
    "task_label": "挂杯",
@@ -409,7 +409,7 @@
    "checkpoint_step": 50000,
    "audited": false,
    "thread_metric": true,
-   "updated_at": 1795200600.4430084,
+   "updated_at": 1795200642.2528973,
    "title": "Franka400 挂杯 · AffGoalDP-Peak-Sparse",
    "family": "AffGoalDP-Peak-Sparse",
    "task_label": "挂杯",
@@ -504,7 +504,7 @@
    "checkpoint_step": 50000,
    "audited": false,
    "thread_metric": false,
-   "updated_at": 1795200600.1406128,
+   "updated_at": 1795200640.966841,
    "title": "Franka100 咖啡机 · affgoalDP",
    "family": "affgoalDP",
    "task_label": "咖啡机放杯",
@@ -599,12 +599,12 @@
    "checkpoint_step": 50000,
    "audited": false,
    "thread_metric": false,
-   "updated_at": 1795200600.1406128,
+   "updated_at": 1795200640.966841,
    "title": "Franka100 韭菜 · affgoalDP",
    "family": "affgoalDP",
    "task_label": "韭菜放切板",
    "connection": "online",
-   "live_groups": 8,
+   "live_groups": 7,
    "training": [
     {
      "current": 50000,
@@ -645,16 +645,16 @@
     {
      "name": "xArm7",
      "expected": 20,
-     "completed": 4,
-     "grasp": 2,
+     "completed": 7,
+     "grasp": 3,
      "grasp_unknown": 0,
      "hang": null,
-     "hang_unknown": 4,
-     "place": 2,
+     "hang_unknown": 7,
+     "place": 3,
      "place_unknown": 0,
      "thread": null,
-     "thread_completed": 2,
-     "thread_unknown": 2
+     "thread_completed": 3,
+     "thread_unknown": 3
     },
     {
      "name": "Kinova",
@@ -694,7 +694,7 @@
    "checkpoint_step": 50000,
    "audited": false,
    "thread_metric": false,
-   "updated_at": 1795200600.1406128,
+   "updated_at": 1795200640.966841,
    "title": "Franka100 咖啡机 · affgoal_dpV1",
    "family": "affgoal_dpV1",
    "task_label": "咖啡机放杯",
@@ -789,7 +789,7 @@
    "checkpoint_step": 50000,
    "audited": false,
    "thread_metric": false,
-   "updated_at": 1795200600.1406128,
+   "updated_at": 1795200640.966841,
    "title": "Franka100 韭菜 · affgoal_dpV1",
    "family": "affgoal_dpV1",
    "task_label": "韭菜放切板",
@@ -1074,7 +1074,7 @@
    "checkpoint_step": 50000,
    "audited": false,
    "thread_metric": false,
-   "updated_at": 1795200612.3805807,
+   "updated_at": 1795200637.4016063,
    "title": "Franka100 咖啡机 · GoalDiffusionPolicyV2 · GPU0",
    "family": "GoalDiffusionPolicyV2",
    "task_label": "咖啡机放杯",
@@ -1169,7 +1169,7 @@
    "checkpoint_step": 50000,
    "audited": false,
    "thread_metric": false,
-   "updated_at": 1795200612.1255715,
+   "updated_at": 1795200637.1983767,
    "title": "Franka100 咖啡机 · GoalDiffusionPolicyV2 · GPU1",
    "family": "GoalDiffusionPolicyV2",
    "task_label": "咖啡机放杯",
@@ -1264,7 +1264,7 @@
    "checkpoint_step": 50000,
    "audited": false,
    "thread_metric": false,
-   "updated_at": 1795200612.3805807,
+   "updated_at": 1795200637.4016063,
    "title": "Franka100 韭菜 · GoalDiffusionPolicyV2",
    "family": "GoalDiffusionPolicyV2",
    "task_label": "韭菜放切板",
@@ -7158,86 +7158,92 @@
    "groups": []
   }
  ],
- "completion_estimates": {},
+ "completion_estimates": {
+  "affgoal_franka100_affgoal_leek_50000": {
+   "evaluation": {
+    "finish_at": 1795217501.5566454
+   }
+  }
+ },
  "feeds": {
   "数据源 1": {
-   "age_seconds": 85895.11286497116,
+   "age_seconds": 85925.13985133171,
    "error": null
   },
   "数据源 2": {
-   "age_seconds": 9.110242128372192,
+   "age_seconds": 39.13722848892212,
    "error": null
   },
   "数据源 3": {
-   "age_seconds": 9.356380462646484,
+   "age_seconds": 39.38336682319641,
    "error": null
   },
   "数据源 4": {
-   "age_seconds": 9.221122026443481,
+   "age_seconds": 39.24810838699341,
    "error": null
   },
   "数据源 5": {
-   "age_seconds": 9.267749786376953,
+   "age_seconds": 39.29473614692688,
    "error": null
   },
   "数据源 6": {
-   "age_seconds": 31.658788681030273,
+   "age_seconds": 61.6857750415802,
    "error": null
   },
   "数据源 7": {
-   "age_seconds": 124929.96578502655,
+   "age_seconds": 124959.9927713871,
    "error": null
   },
   "数据源 8": {
-   "age_seconds": 116479.41330194473,
+   "age_seconds": 116509.44028830528,
    "error": null
   },
   "数据源 9": {
-   "age_seconds": 101991.1505215168,
+   "age_seconds": 102021.17750787735,
    "error": null
   },
   "数据源 10": {
-   "age_seconds": 95612.01147222519,
+   "age_seconds": 95642.03845858574,
    "error": null
   },
   "数据源 11": {
-   "age_seconds": 95567.78338718414,
+   "age_seconds": 95597.8103735447,
    "error": null
   },
   "数据源 12": {
-   "age_seconds": 39780.2424762249,
+   "age_seconds": 39810.26946258545,
    "error": null
   },
   "数据源 13": {
-   "age_seconds": 6.469470500946045,
+   "age_seconds": 7.53883171081543,
    "error": null
   },
   "数据源 14": {
-   "age_seconds": 20205.03985452652,
+   "age_seconds": 20235.06684088707,
    "error": null
   },
   "数据源 15": {
-   "age_seconds": 15885.387079954147,
+   "age_seconds": 15915.414066314697,
    "error": null
   },
   "数据源 16": {
-   "age_seconds": 15.581440925598145,
+   "age_seconds": 6.595951080322266,
    "error": null
   },
   "数据源 17": {
-   "age_seconds": 15.495114088058472,
+   "age_seconds": 5.503785848617554,
    "error": null
   },
   "数据源 18": {
-   "age_seconds": 2.999096393585205,
+   "age_seconds": 8.981050252914429,
    "error": null
   },
   "数据源 19": {
-   "age_seconds": 77338.48391199112,
+   "age_seconds": 77368.51089835167,
    "error": null
   },
   "数据源 20": {
-   "age_seconds": 59789.59453201294,
+   "age_seconds": 59819.62151837349,
    "error": null
   }
  }
