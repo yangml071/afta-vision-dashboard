@@ -1,5 +1,5 @@
 {
- "generated_at": 1795278233.4424062,
+ "generated_at": 1795278263.4585886,
  "public_view": true,
  "rows": [
   {
@@ -409,7 +409,7 @@
    "checkpoint_step": 50000,
    "audited": false,
    "thread_metric": true,
-   "updated_at": 1795278213.9602747,
+   "updated_at": 1795278249.4260597,
    "title": "Franka400 挂杯 · AffGoalDP-Win3x3-Sparse · Obs2 / H16 / Exec8 · 去 Affordance",
    "family": "AffGoalDP-Win3x3-Sparse · Obs2 / H16 / Exec8 · 去 Affordance",
    "task_label": "挂杯",
@@ -417,7 +417,7 @@
    "live_groups": 0,
    "training": [
     {
-     "current": 38440,
+     "current": 38660,
      "target": 50000,
      "state": "running",
      "label": "Franka400 挂杯"
@@ -504,7 +504,7 @@
    "checkpoint_step": 50000,
    "audited": false,
    "thread_metric": true,
-   "updated_at": 1795278213.9602747,
+   "updated_at": 1795278249.4260597,
    "title": "Franka400 挂杯 · AffGoalDP-Win3x3-Sparse · Obs2 / H16 / Exec8 · 去视觉对齐",
    "family": "AffGoalDP-Win3x3-Sparse · Obs2 / H16 / Exec8 · 去视觉对齐",
    "task_label": "挂杯",
@@ -512,7 +512,7 @@
    "live_groups": 0,
    "training": [
     {
-     "current": 31860,
+     "current": 32040,
      "target": 50000,
      "state": "running",
      "label": "Franka400 挂杯"
@@ -599,7 +599,7 @@
    "checkpoint_step": 50000,
    "audited": false,
    "thread_metric": false,
-   "updated_at": 1795278224.2504597,
+   "updated_at": 1795278259.3128853,
    "title": "Franka100 咖啡机 · AffGoalDP-Win3x3-Sparse · 相对 TCP · Obs2 / H16 / Exec8",
    "family": "AffGoalDP-Win3x3-Sparse · 相对 TCP · Obs2 / H16 / Exec8",
    "task_label": "咖啡机放杯",
@@ -688,18 +688,18 @@
   },
   {
    "id": "affgoal_dp_win3x3_sparse_obs2_h16_relative_tcp_leek_50000",
-   "state": "testing",
+   "state": "queued",
    "task": "pick_leek_place_cuttingboard",
    "expected": 100,
    "checkpoint_step": 50000,
    "audited": false,
    "thread_metric": false,
-   "updated_at": 1795278224.2504597,
+   "updated_at": 1795278259.3128853,
    "title": "Franka100 韭菜 · AffGoalDP-Win3x3-Sparse · 相对 TCP · Obs2 / H16 / Exec8",
    "family": "AffGoalDP-Win3x3-Sparse · 相对 TCP · Obs2 / H16 / Exec8",
    "task_label": "韭菜放切板",
    "connection": "online",
-   "live_groups": 1,
+   "live_groups": 0,
    "training": [
     {
      "current": 50000,
@@ -712,16 +712,16 @@
     {
      "name": "Franka",
      "expected": 20,
-     "completed": 0,
-     "grasp": 0,
+     "completed": 4,
+     "grasp": 3,
      "grasp_unknown": 0,
      "hang": null,
-     "hang_unknown": 0,
-     "place": 0,
+     "hang_unknown": 4,
+     "place": 3,
      "place_unknown": 0,
      "thread": null,
-     "thread_completed": 0,
-     "thread_unknown": 0
+     "thread_completed": 3,
+     "thread_unknown": 3
     },
     {
      "name": "UR5e",
@@ -4389,7 +4389,7 @@
    "task": "pick_mugcup_place_coffeemachine",
    "expected": 100,
    "audited": false,
-   "updated_at": 1795278184.0320294,
+   "updated_at": 1795278228.8840346,
    "title": "咖啡机 · DINOv2 对齐＋几何",
    "family": "24 训练模型 · 104 六组正式评测",
    "task_label": "咖啡机放杯",
@@ -4468,7 +4468,7 @@
    "task": "hang_cup",
    "expected": 100,
    "audited": false,
-   "updated_at": 1795278184.0320294,
+   "updated_at": 1795278228.8840346,
    "title": "统一 DINO 头＋挂杯旧式 goal＋辅助监督",
    "family": "24 训练模型 · 104 六组正式评测",
    "task_label": "挂杯",
@@ -4553,7 +4553,7 @@
    "task": "hang_cup",
    "expected": 100,
    "audited": false,
-   "updated_at": 1795278184.0320294,
+   "updated_at": 1795278228.8840346,
    "title": "统一 DINO 头＋挂杯 IRG-AffSup",
    "family": "24 训练模型 · 104 六组正式评测",
    "task_label": "挂杯",
@@ -4638,7 +4638,7 @@
    "task": "hang_cup",
    "expected": 100,
    "audited": true,
-   "updated_at": 1795278184.0320294,
+   "updated_at": 1795278228.8840346,
    "title": "换臂对齐＋几何辅助 · DINOv2-B/14-reg4＋LeRobot ACT",
    "family": "24 训练模型 · 104 六组正式评测",
    "task_label": "挂杯",
@@ -4717,7 +4717,7 @@
    "task": "hang_cup",
    "expected": 100,
    "audited": true,
-   "updated_at": 1795278184.0320294,
+   "updated_at": 1795278228.8840346,
    "title": "换臂对齐＋几何辅助 · ResNet18＋LeRobot ACT",
    "family": "24 训练模型 · 104 六组正式评测",
    "task_label": "挂杯",
@@ -4796,7 +4796,7 @@
    "task": "hang_cup",
    "expected": 100,
    "audited": true,
-   "updated_at": 1795278184.0320294,
+   "updated_at": 1795278228.8840346,
    "title": "默认ResNet18＋LeRobot ACT · Franka400基线",
    "family": "24 训练模型 · 104 六组正式评测",
    "task_label": "挂杯",
@@ -4869,7 +4869,7 @@
    "task": "hang_cup",
    "expected": 100,
    "audited": false,
-   "updated_at": 1795278184.0320294,
+   "updated_at": 1795278228.8840346,
    "title": "默认 ResNet18＋LeRobot ACT · Franka400 基线＋换臂对齐",
    "family": "LeRobot ACT · 换臂对齐与几何辅助 · 104 四组评测",
    "task_label": "挂杯",
@@ -4948,7 +4948,7 @@
    "task": "hang_cup",
    "expected": 100,
    "audited": false,
-   "updated_at": 1795278184.0320294,
+   "updated_at": 1795278228.8840346,
    "title": "默认 ResNet18＋LeRobot ACT · Franka400 基线＋几何辅助",
    "family": "LeRobot ACT · 换臂对齐与几何辅助 · 104 四组评测",
    "task_label": "挂杯",
@@ -5027,7 +5027,7 @@
    "task": "hang_cup",
    "expected": 100,
    "audited": false,
-   "updated_at": 1795278184.0320294,
+   "updated_at": 1795278228.8840346,
    "title": "DINOv2-B/14-reg4＋LeRobot ACT · Franka400 基线＋几何辅助",
    "family": "LeRobot ACT · 换臂对齐与几何辅助 · 104 四组评测",
    "task_label": "挂杯",
@@ -5106,7 +5106,7 @@
    "task": "hang_cup",
    "expected": 100,
    "audited": false,
-   "updated_at": 1795278184.0320294,
+   "updated_at": 1795278228.8840346,
    "title": "DINOv2-B/14-reg4＋LeRobot ACT · Franka400 基线＋换臂对齐",
    "family": "LeRobot ACT · 换臂对齐与几何辅助 · 104 四组评测",
    "task_label": "挂杯",
@@ -5842,7 +5842,7 @@
    "task": "hang_cup",
    "expected": 100,
    "audited": true,
-   "updated_at": 1795278208.8793118,
+   "updated_at": 1795278252.4558415,
    "title": "DINOv2-B/14＋ACT · 时间集成",
    "family": "ACT时间集成重测 · 原始RGB ACT配置",
    "task_label": "挂杯",
@@ -5921,7 +5921,7 @@
    "task": "hang_cup",
    "expected": 100,
    "audited": true,
-   "updated_at": 1795278208.8896327,
+   "updated_at": 1795278252.4650953,
    "title": "原始 ResNet18 编码器＋ACT · 时间集成",
    "family": "ACT时间集成重测 · 原始RGB ACT配置",
    "task_label": "挂杯",
@@ -6000,7 +6000,7 @@
    "task": "hang_cup",
    "expected": 100,
    "audited": false,
-   "updated_at": 1795278208.6812546,
+   "updated_at": 1795278252.2681725,
    "title": "挂杯 DINOv2 · 对齐＋几何",
    "family": "新增六项测试队列 · 时间集成 K=8／每步重预测",
    "task_label": "挂杯",
@@ -6079,7 +6079,7 @@
    "task": "hang_cup",
    "expected": 100,
    "audited": false,
-   "updated_at": 1795278208.683788,
+   "updated_at": 1795278252.2706394,
    "title": "挂杯 DINOv2 · 仅对齐",
    "family": "新增六项测试队列 · 时间集成 K=8／每步重预测",
    "task_label": "挂杯",
@@ -6158,7 +6158,7 @@
    "task": "hang_cup",
    "expected": 100,
    "audited": false,
-   "updated_at": 1795278208.6865475,
+   "updated_at": 1795278252.273561,
    "title": "挂杯 DINOv2 · 对齐＋几何＋自特征保持",
    "family": "新增六项测试队列 · 时间集成 K=8／每步重预测",
    "task_label": "挂杯",
@@ -6237,7 +6237,7 @@
    "task": "hang_cup",
    "expected": 100,
    "audited": false,
-   "updated_at": 1795278208.689128,
+   "updated_at": 1795278252.2764966,
    "title": "挂杯 · IRG-AffSup",
    "family": "新增六项测试队列 · 时间集成 K=8／每步重预测",
    "task_label": "挂杯",
@@ -6310,7 +6310,7 @@
    "task": "hang_cup",
    "expected": 100,
    "audited": false,
-   "updated_at": 1795278208.6918488,
+   "updated_at": 1795278252.2794924,
    "title": "挂杯 · 旧式goal＋辅助监督",
    "family": "新增六项测试队列 · 时间集成 K=8／每步重预测",
    "task_label": "挂杯",
@@ -6383,7 +6383,7 @@
    "task": "hang_cup",
    "expected": 100,
    "audited": false,
-   "updated_at": 1795278208.694336,
+   "updated_at": 1795278252.2820914,
    "title": "单Franka400 · 原始RGB纯ACT",
    "family": "新增六项测试队列 · 时间集成 K=8／每步重预测",
    "task_label": "挂杯",
@@ -6456,7 +6456,7 @@
    "task": "hang_cup",
    "expected": 100,
    "audited": true,
-   "updated_at": 1795278208.7288792,
+   "updated_at": 1795278252.3206036,
    "title": "换臂对齐＋几何辅助 · DINOv2-B/14＋ACT",
    "family": "本轮ACT时间集成 · K=8／每步重预测",
    "task_label": "挂杯",
@@ -6535,7 +6535,7 @@
    "task": "hang_cup",
    "expected": 100,
    "audited": true,
-   "updated_at": 1795278208.7321315,
+   "updated_at": 1795278252.3237634,
    "title": "换臂对齐＋几何辅助 · 原始 ResNet18 编码器＋ACT",
    "family": "本轮ACT时间集成 · K=8／每步重预测",
    "task_label": "挂杯",
@@ -6614,7 +6614,7 @@
    "task": "hang_cup",
    "expected": 100,
    "audited": true,
-   "updated_at": 1795278208.7353263,
+   "updated_at": 1795278252.3270197,
    "title": "D · 换臂特征对齐＋几何辅助",
    "family": "本轮ACT时间集成 · K=8／每步重预测",
    "task_label": "挂杯",
@@ -8206,122 +8206,122 @@
  "completion_estimates": {
   "affgoal_dp_win3x3_sparse_obs2_h16_no_affordance_hang_50000": {
    "training": {
-    "finish_at": 1795280145.1650057
+    "finish_at": 1795280144.2629492
    }
   },
   "affgoal_dp_win3x3_sparse_obs2_h16_no_visual_alignment_hang_50000": {
    "training": {
-    "finish_at": 1795281630.936297
+    "finish_at": 1795281629.5928278
    }
   }
  },
  "feeds": {
   "数据源 1": {
-   "age_seconds": 163504.74303269386,
+   "age_seconds": 163534.7592151165,
    "error": null
   },
   "数据源 2": {
-   "age_seconds": 24.468446969985962,
+   "age_seconds": 10.903443813323975,
    "error": null
   },
   "数据源 3": {
-   "age_seconds": 13.908989667892456,
+   "age_seconds": 13.92271089553833,
    "error": null
   },
   "数据源 4": {
-   "age_seconds": 24.686471939086914,
+   "age_seconds": 11.110335111618042,
    "error": null
   },
   "数据源 5": {
-   "age_seconds": 24.55020499229431,
+   "age_seconds": 10.991484642028809,
    "error": null
   },
   "数据源 6": {
-   "age_seconds": 24.581274032592773,
+   "age_seconds": 11.048704624176025,
    "error": null
   },
   "数据源 7": {
-   "age_seconds": 13.507061004638672,
+   "age_seconds": 13.528722286224365,
    "error": null
   },
   "数据源 8": {
-   "age_seconds": 49.41037678718567,
+   "age_seconds": 34.57455396652222,
    "error": null
   },
   "数据源 9": {
-   "age_seconds": 202539.59595274925,
+   "age_seconds": 202569.6121351719,
    "error": null
   },
   "数据源 10": {
-   "age_seconds": 194089.04346966743,
+   "age_seconds": 194119.05965209007,
    "error": null
   },
   "数据源 11": {
-   "age_seconds": 179600.7806892395,
+   "age_seconds": 179630.79687166214,
    "error": null
   },
   "数据源 12": {
-   "age_seconds": 173221.6416399479,
+   "age_seconds": 173251.65782237053,
    "error": null
   },
   "数据源 13": {
-   "age_seconds": 173177.41355490685,
+   "age_seconds": 173207.42973732948,
    "error": null
   },
   "数据源 14": {
-   "age_seconds": 117389.8726439476,
+   "age_seconds": 117419.88882637024,
    "error": null
   },
   "数据源 15": {
-   "age_seconds": 59717.49250769615,
+   "age_seconds": 59747.50869011879,
    "error": null
   },
   "数据源 16": {
-   "age_seconds": 97814.67002224922,
+   "age_seconds": 97844.68620467186,
    "error": null
   },
   "数据源 17": {
-   "age_seconds": 93495.01724767685,
+   "age_seconds": 93525.03343009949,
    "error": null
   },
   "数据源 18": {
-   "age_seconds": 59273.3771584034,
+   "age_seconds": 59303.393340826035,
    "error": null
   },
   "数据源 19": {
-   "age_seconds": 70728.9996342659,
+   "age_seconds": 70759.01581668854,
    "error": null
   },
   "数据源 20": {
-   "age_seconds": 69175.51464295387,
+   "age_seconds": 69205.53082537651,
    "error": null
   },
   "数据源 21": {
-   "age_seconds": 17926.841301441193,
+   "age_seconds": 17956.85748386383,
    "error": null
   },
   "数据源 22": {
-   "age_seconds": 10057.640565872192,
+   "age_seconds": 10087.65674829483,
    "error": null
   },
   "数据源 23": {
-   "age_seconds": 7.083062410354614,
+   "age_seconds": 2.6180145740509033,
    "error": null
   },
   "数据源 24": {
-   "age_seconds": 17.515479803085327,
+   "age_seconds": 12.628778219223022,
    "error": null
   },
   "数据源 25": {
-   "age_seconds": 13394.474565267563,
+   "age_seconds": 13424.4907476902,
    "error": null
   },
   "数据源 26": {
-   "age_seconds": 154948.11407971382,
+   "age_seconds": 154978.13026213646,
    "error": null
   },
   "数据源 27": {
-   "age_seconds": 137399.22469973564,
+   "age_seconds": 137429.24088215828,
    "error": null
   }
  }
