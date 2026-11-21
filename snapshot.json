@@ -1,5 +1,5 @@
 {
- "generated_at": 1795293605.2394786,
+ "generated_at": 1795293635.2609055,
  "public_view": true,
  "rows": [
   {
@@ -409,12 +409,12 @@
    "checkpoint_step": 50000,
    "audited": false,
    "thread_metric": true,
-   "updated_at": 1795293592.476672,
+   "updated_at": 1795293626.965436,
    "title": "Franka400 挂杯 · AffGoalDP-Win3x3-Sparse · Obs2 / H16 / Exec8 · 去 Affordance",
    "family": "AffGoalDP-Win3x3-Sparse · Obs2 / H16 / Exec8 · 去 Affordance",
    "task_label": "挂杯",
    "connection": "online",
-   "live_groups": 4,
+   "live_groups": 5,
    "training": [
     {
      "current": 50000,
@@ -504,7 +504,7 @@
    "checkpoint_step": 50000,
    "audited": false,
    "thread_metric": true,
-   "updated_at": 1795293592.476672,
+   "updated_at": 1795293626.965436,
    "title": "Franka400 挂杯 · AffGoalDP-Win3x3-Sparse · Obs2 / H16 / Exec8 · 去视觉对齐",
    "family": "AffGoalDP-Win3x3-Sparse · Obs2 / H16 / Exec8 · 去视觉对齐",
    "task_label": "挂杯",
@@ -599,12 +599,12 @@
    "checkpoint_step": 50000,
    "audited": false,
    "thread_metric": false,
-   "updated_at": 1795293594.8158622,
+   "updated_at": 1795293629.4952004,
    "title": "Franka100 咖啡机 · AffGoalDP-Win3x3-Sparse · 相对 TCP · Obs2 / H16 / Exec8",
    "family": "AffGoalDP-Win3x3-Sparse · 相对 TCP · Obs2 / H16 / Exec8",
    "task_label": "咖啡机放杯",
    "connection": "online",
-   "live_groups": 8,
+   "live_groups": 7,
    "training": [
     {
      "current": 50000,
@@ -631,16 +631,16 @@
     {
      "name": "UR5e",
      "expected": 20,
-     "completed": 8,
-     "grasp": 8,
+     "completed": 12,
+     "grasp": 12,
      "grasp_unknown": 0,
      "hang": null,
-     "hang_unknown": 8,
+     "hang_unknown": 12,
      "place": 0,
      "place_unknown": 0,
      "thread": null,
-     "thread_completed": 8,
-     "thread_unknown": 8
+     "thread_completed": 12,
+     "thread_unknown": 12
     },
     {
      "name": "xArm7",
@@ -694,7 +694,7 @@
    "checkpoint_step": 50000,
    "audited": false,
    "thread_metric": false,
-   "updated_at": 1795293594.8158622,
+   "updated_at": 1795293629.4952004,
    "title": "Franka100 韭菜 · AffGoalDP-Win3x3-Sparse · 相对 TCP · Obs2 / H16 / Exec8",
    "family": "AffGoalDP-Win3x3-Sparse · 相对 TCP · Obs2 / H16 / Exec8",
    "task_label": "韭菜放切板",
@@ -8208,115 +8208,120 @@
    "evaluation": {
     "finish_at": 1795295735.6693838
    }
+  },
+  "affgoal_dp_win3x3_sparse_obs2_h16_relative_tcp_coffee_50000": {
+   "evaluation": {
+    "finish_at": 1795303485.4140098
+   }
   }
  },
  "feeds": {
   "数据源 1": {
-   "age_seconds": 178876.54010510445,
+   "age_seconds": 178906.56153202057,
    "error": null
   },
   "数据源 2": {
-   "age_seconds": 8.140494108200073,
+   "age_seconds": 38.16192102432251,
    "error": null
   },
   "数据源 3": {
-   "age_seconds": 10.56644868850708,
+   "age_seconds": 10.593337535858154,
    "error": null
   },
   "数据源 4": {
-   "age_seconds": 8.299673557281494,
+   "age_seconds": 38.32110047340393,
    "error": null
   },
   "数据源 5": {
-   "age_seconds": 8.169212818145752,
+   "age_seconds": 38.19063973426819,
    "error": null
   },
   "数据源 6": {
-   "age_seconds": 8.20693063735962,
+   "age_seconds": 38.228357553482056,
    "error": null
   },
   "数据源 7": {
-   "age_seconds": 10.172032594680786,
+   "age_seconds": 10.182224750518799,
    "error": null
   },
   "数据源 8": {
-   "age_seconds": 30.40217685699463,
+   "age_seconds": 60.423603773117065,
    "error": null
   },
   "数据源 9": {
-   "age_seconds": 217911.39302515984,
+   "age_seconds": 217941.41445207596,
    "error": null
   },
   "数据源 10": {
-   "age_seconds": 209460.84054207802,
+   "age_seconds": 209490.86196899414,
    "error": null
   },
   "数据源 11": {
-   "age_seconds": 194972.5777616501,
+   "age_seconds": 195002.5991885662,
    "error": null
   },
   "数据源 12": {
-   "age_seconds": 188593.43871235847,
+   "age_seconds": 188623.4601392746,
    "error": null
   },
   "数据源 13": {
-   "age_seconds": 188549.21062731743,
+   "age_seconds": 188579.23205423355,
    "error": null
   },
   "数据源 14": {
-   "age_seconds": 132761.66971635818,
+   "age_seconds": 132791.6911432743,
    "error": null
   },
   "数据源 15": {
-   "age_seconds": 75089.28958010674,
+   "age_seconds": 75119.31100702286,
    "error": null
   },
   "数据源 16": {
-   "age_seconds": 113186.4670946598,
+   "age_seconds": 113216.48852157593,
    "error": null
   },
   "数据源 17": {
-   "age_seconds": 108866.81432008743,
+   "age_seconds": 108896.83574700356,
    "error": null
   },
   "数据源 18": {
-   "age_seconds": 74645.17423081398,
+   "age_seconds": 74675.1956577301,
    "error": null
   },
   "数据源 19": {
-   "age_seconds": 86100.79670667648,
+   "age_seconds": 86130.8181335926,
    "error": null
   },
   "数据源 20": {
-   "age_seconds": 84547.31171536446,
+   "age_seconds": 84577.33314228058,
    "error": null
   },
   "数据源 21": {
-   "age_seconds": 33298.638373851776,
+   "age_seconds": 33328.6598007679,
    "error": null
   },
   "数据源 22": {
-   "age_seconds": 25429.437638282776,
+   "age_seconds": 25459.4590651989,
    "error": null
   },
   "数据源 23": {
-   "age_seconds": 8.359938621520996,
+   "age_seconds": 2.3015429973602295,
    "error": null
   },
   "数据源 24": {
-   "age_seconds": 10.22513461112976,
+   "age_seconds": 5.675917148590088,
    "error": null
   },
   "数据源 25": {
-   "age_seconds": 28766.271637678146,
+   "age_seconds": 28796.29306459427,
    "error": null
   },
   "数据源 26": {
-   "age_seconds": 170319.9111521244,
+   "age_seconds": 170349.93257904053,
    "error": null
   },
   "数据源 27": {
-   "age_seconds": 152771.02177214622,
+   "age_seconds": 152801.04319906235,
    "error": null
   }
  }
