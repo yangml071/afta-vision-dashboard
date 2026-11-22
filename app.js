@@ -93,6 +93,9 @@ const VISUAL_PROFILES = new Map([
 ].flatMap(([ids, ...profile]) => ids.map(id => [id, profile])));
 
 function visualProfile(id) {
+  if (id.startsWith('affgoal_dp_aura_relative_tcp_')) {
+    return [DINO_V2, ALIGNMENT, FROZEN];
+  }
   if (/^affordance_goal24_public_[AB]_\d+$/.test(id)) {
     return [DINO_V2 + '（公开原权重）', NO_ALIGNMENT, FROZEN];
   }
@@ -118,6 +121,7 @@ const beijingTime = new Intl.DateTimeFormat('zh-CN', {timeZone:'Asia/Shanghai',
   month:'2-digit', day:'2-digit', hour:'2-digit', minute:'2-digit', hourCycle:'h23'});
 
 function methodName(row) {
+  if (row.id.startsWith('affgoal_dp_aura_relative_tcp_')) return 'AffGoalDP-Win3x3-Sparse';
   if (row.id.startsWith('affordance_goal24_dpv2_')) return 'GoalDiffusionPolicyV2 · DP';
   if (row.id.startsWith('affordance_goal24_dp_')) return 'Affordance + SE(3) Goal · DP';
   if (/^affordance_goal24_(?:public_)?[AB]_/.test(row.id)) return 'Affordance + SE(3) Goal · ACT';
@@ -208,7 +212,7 @@ function totalGroup(row) {
   if (row.groups?.some(group => Number.isInteger(group.accepted))) {
     total.accepted = row.groups.reduce((sum, group) => sum + group.accepted, 0);
   }
-  for (const metric of ['grasp','hang','place']) {
+  for (const metric of ['grasp','hang','place','task_success']) {
     const value = metricTotal([row],metric);
     total[metric] = value.completed ? value.successes : null;
     total[metric + '_completed'] = value.completed;
@@ -234,7 +238,7 @@ function renderTotals(rows) {
 }
 
 function measurement(group, metric, task) {
-  const label = {grasp:'抓取', thread:'抓取后穿柄', hang:'挂杯', place:'放置'}[metric];
+  const label = {grasp:'抓取', thread:'抓取后穿柄', hang:'挂杯', place:'放置', task_success:'任务成功'}[metric];
   if ((metric === 'place' && task === 'hang_cup') || (metric === 'hang' && task !== 'hang_cup'))
     return '<div class="measure"><span class="na">不适用</span></div>';
   const count = group?.[metric + '_completed'] ?? group?.completed ?? 0;
@@ -249,7 +253,8 @@ function measurement(group, metric, task) {
 function cell(row, body) {
   if (row.accounting?.conflicts?.length) return '<td class="metric-cell"><span class="unknown">统计待核实</span></td>';
   const group = body === '总计' ? totalGroup(row) : (row.groups || []).find(g => g.name === body);
-  const metrics = selectedMetric === 'both' ? ['grasp', row.task === 'hang_cup' ? 'hang' : 'place'] : [selectedMetric];
+  const taskMetric = row.task_success_metric ? 'task_success' : row.task === 'hang_cup' ? 'hang' : 'place';
+  const metrics = selectedMetric === 'both' ? ['grasp', taskMetric] : [selectedMetric];
   if (row.thread_metric && selectedMetric === 'both') metrics.splice(1, 0, 'thread');
   const pending = group?.pending > 0 ? `<div class="fraction">${Number.isInteger(group.accepted) ?
     '其中待正式入账' : '已结束，待入账'} ${num(group.pending)} 场</div>` : '';
