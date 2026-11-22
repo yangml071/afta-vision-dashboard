@@ -1,5 +1,5 @@
 {
- "generated_at": 1795346385.837347,
+ "generated_at": 1795346415.858212,
  "public_view": true,
  "rows": [
   {
@@ -314,7 +314,7 @@
    "checkpoint_step": 50000,
    "audited": false,
    "thread_metric": false,
-   "updated_at": 1795346379.7900198,
+   "updated_at": 1795346397.164706,
    "title": "Franka100 韭菜 · AffGoalDP-Win3x3-Sparse · 相对 TCP · Obs2 / H16 / Exec8 · Min-Max / DDPM · 在线冻结 DINOv2 + Crop Jitter",
    "family": "AffGoalDP-Win3x3-Sparse · 相对 TCP · Obs2 / H16 / Exec8 · Min-Max / DDPM · 在线冻结 DINOv2 + Crop Jitter",
    "task_label": "韭菜放切板",
@@ -322,7 +322,7 @@
    "live_groups": 0,
    "training": [
     {
-     "current": 12820,
+     "current": 12880,
      "target": 50000,
      "state": "running",
      "label": "Franka100 韭菜"
@@ -409,7 +409,7 @@
    "checkpoint_step": 50000,
    "audited": false,
    "thread_metric": false,
-   "updated_at": 1795346379.790157,
+   "updated_at": 1795346397.203273,
    "title": "Franka100 咖啡机 · AffGoalDP-Win3x3-Sparse · 相对 TCP · Obs2 / H16 / Exec8 · Min-Max / DDPM",
    "family": "AffGoalDP-Win3x3-Sparse · 相对 TCP · Obs2 / H16 / Exec8 · Min-Max / DDPM",
    "task_label": "咖啡机放杯",
@@ -417,7 +417,7 @@
    "live_groups": 0,
    "training": [
     {
-     "current": 27880,
+     "current": 27960,
      "target": 50000,
      "state": "running",
      "label": "Franka100 咖啡机"
@@ -1827,12 +1827,224 @@
    ]
   },
   {
+   "id": "affgoal_dp_aura_pick_factory_peg_insert",
+   "state": "waiting",
+   "task": "pick_factory_peg_insert",
+   "expected": 100,
+   "audited": false,
+   "updated_at": 1795346412.8410256,
+   "title": "插销入孔 · AffGoalDP-Win3x3-Sparse · Obs2 / H16 / Exec8",
+   "family": "AURA 装配 · AffGoalDP-Win3x3-Sparse · Obs2 / H16 / Exec8",
+   "task_label": "插销入孔",
+   "connection": "online",
+   "live_groups": 0,
+   "training": [
+    {
+     "current": null,
+     "target": 50000,
+     "state": "waiting",
+     "label": "对齐特征 14,896/14,896 帧 · 稀疏监督 100/100 条"
+    }
+   ],
+   "groups": [
+    {
+     "name": "Franka",
+     "expected": 20,
+     "completed": 0,
+     "grasp": null
+    },
+    {
+     "name": "UR5e",
+     "expected": 20,
+     "completed": 0,
+     "grasp": null
+    },
+    {
+     "name": "xArm7",
+     "expected": 20,
+     "completed": 0,
+     "grasp": null
+    },
+    {
+     "name": "Kinova",
+     "expected": 20,
+     "completed": 0,
+     "grasp": null
+    },
+    {
+     "name": "Sawyer",
+     "expected": 20,
+     "completed": 0,
+     "grasp": null
+    }
+   ]
+  },
+  {
+   "id": "affgoal_dp_aura_pick_factory_gear_mesh",
+   "state": "waiting",
+   "task": "pick_factory_gear_mesh",
+   "expected": 100,
+   "audited": false,
+   "updated_at": 1795346412.8410256,
+   "title": "齿轮啮合 · AffGoalDP-Win3x3-Sparse · Obs2 / H16 / Exec8",
+   "family": "AURA 装配 · AffGoalDP-Win3x3-Sparse · Obs2 / H16 / Exec8",
+   "task_label": "齿轮啮合",
+   "connection": "online",
+   "live_groups": 0,
+   "training": [
+    {
+     "current": null,
+     "target": 50000,
+     "state": "waiting",
+     "label": "对齐特征 14,912/14,912 帧 · 稀疏监督 100/100 条"
+    }
+   ],
+   "groups": [
+    {
+     "name": "Franka",
+     "expected": 20,
+     "completed": 0,
+     "grasp": null
+    },
+    {
+     "name": "UR5e",
+     "expected": 20,
+     "completed": 0,
+     "grasp": null
+    },
+    {
+     "name": "xArm7",
+     "expected": 20,
+     "completed": 0,
+     "grasp": null
+    },
+    {
+     "name": "Kinova",
+     "expected": 20,
+     "completed": 0,
+     "grasp": null
+    },
+    {
+     "name": "Sawyer",
+     "expected": 20,
+     "completed": 0,
+     "grasp": null
+    }
+   ]
+  },
+  {
+   "id": "affgoal_dp_aura_pick_usb_insert_laptop",
+   "state": "waiting",
+   "task": "pick_usb_insert_laptop",
+   "expected": 100,
+   "audited": false,
+   "updated_at": 1795346412.8410256,
+   "title": "USB 插入 · AffGoalDP-Win3x3-Sparse · Obs2 / H16 / Exec8",
+   "family": "AURA 装配 · AffGoalDP-Win3x3-Sparse · Obs2 / H16 / Exec8",
+   "task_label": "USB 插入",
+   "connection": "online",
+   "live_groups": 0,
+   "training": [
+    {
+     "current": null,
+     "target": 50000,
+     "state": "waiting",
+     "label": "对齐特征 17,931/17,931 帧 · 稀疏监督 100/100 条"
+    }
+   ],
+   "groups": [
+    {
+     "name": "Franka",
+     "expected": 20,
+     "completed": 0,
+     "grasp": null
+    },
+    {
+     "name": "UR5e",
+     "expected": 20,
+     "completed": 0,
+     "grasp": null
+    },
+    {
+     "name": "xArm7",
+     "expected": 20,
+     "completed": 0,
+     "grasp": null
+    },
+    {
+     "name": "Kinova",
+     "expected": 20,
+     "completed": 0,
+     "grasp": null
+    },
+    {
+     "name": "Sawyer",
+     "expected": 20,
+     "completed": 0,
+     "grasp": null
+    }
+   ]
+  },
+  {
+   "id": "affgoal_dp_aura_pick_hammer_place_on_nail",
+   "state": "waiting",
+   "task": "pick_hammer_place_on_nail",
+   "expected": 100,
+   "audited": false,
+   "updated_at": 1795346412.8410256,
+   "title": "锤头对准钉帽 · AffGoalDP-Win3x3-Sparse · Obs2 / H16 / Exec8",
+   "family": "AURA 装配 · AffGoalDP-Win3x3-Sparse · Obs2 / H16 / Exec8",
+   "task_label": "锤头对准钉帽",
+   "connection": "online",
+   "live_groups": 0,
+   "training": [
+    {
+     "current": null,
+     "target": 50000,
+     "state": "waiting",
+     "label": "对齐特征 15,199/15,199 帧 · 稀疏监督 100/100 条"
+    }
+   ],
+   "groups": [
+    {
+     "name": "Franka",
+     "expected": 20,
+     "completed": 0,
+     "grasp": null
+    },
+    {
+     "name": "UR5e",
+     "expected": 20,
+     "completed": 0,
+     "grasp": null
+    },
+    {
+     "name": "xArm7",
+     "expected": 20,
+     "completed": 0,
+     "grasp": null
+    },
+    {
+     "name": "Kinova",
+     "expected": 20,
+     "completed": 0,
+     "grasp": null
+    },
+    {
+     "name": "Sawyer",
+     "expected": 20,
+     "completed": 0,
+     "grasp": null
+    }
+   ]
+  },
+  {
    "id": "aura_franka100_dp_pick_factory_peg_insert",
    "state": "testing",
    "task": "pick_factory_peg_insert",
    "expected": 100,
    "audited": false,
-   "updated_at": 1795346376.1947308,
+   "updated_at": 1795346412.9348836,
    "title": "插销入孔 · LeRobot · DP",
    "family": "AURA 装配 · Franka100 LeRobot DP",
    "task_label": "插销入孔",
@@ -1885,7 +2097,7 @@
    "task": "pick_factory_gear_mesh",
    "expected": 100,
    "audited": false,
-   "updated_at": 1795346376.1947308,
+   "updated_at": 1795346412.9348836,
    "title": "齿轮啮合 · LeRobot · DP",
    "family": "AURA 装配 · Franka100 LeRobot DP",
    "task_label": "齿轮啮合",
@@ -1938,7 +2150,7 @@
    "task": "pick_usb_insert_laptop",
    "expected": 100,
    "audited": false,
-   "updated_at": 1795346376.1947308,
+   "updated_at": 1795346412.9348836,
    "title": "USB 插入 · LeRobot · DP",
    "family": "AURA 装配 · Franka100 LeRobot DP",
    "task_label": "USB 插入",
@@ -1991,7 +2203,7 @@
    "task": "pick_hammer_place_on_nail",
    "expected": 100,
    "audited": false,
-   "updated_at": 1795346376.1947308,
+   "updated_at": 1795346412.9348836,
    "title": "锤头对准钉帽 · LeRobot · DP",
    "family": "AURA 装配 · Franka100 LeRobot DP",
    "task_label": "锤头对准钉帽",
@@ -4723,88 +4935,77 @@
    ]
   },
   {
-   "id": "aura_fine_unified_visual_pick_factory_peg_insert",
-   "state": "trained",
-   "task": "pick_factory_peg_insert",
-   "expected": null,
-   "updated_at": 1795346296.4739604,
-   "title": "插销入孔 · 独立视觉头",
-   "family": "AURA 装配 · 四项任务独立视觉头",
-   "task_label": "插销入孔",
+   "id": "hang_dino_joint_dp24_gpu0",
+   "state": "complete",
+   "task": "hang_cup",
+   "expected": 100,
+   "audited": true,
+   "updated_at": 1795108314.457011,
+   "title": "DINOv2-B/14-reg4＋LeRobot DP · 视觉参与反传",
+   "family": "LeRobot DP · 挂杯",
+   "task_label": "挂杯",
    "connection": "online",
    "live_groups": 0,
    "training": [
     {
-     "current": 10000,
-     "target": 10000,
+     "current": 50000,
+     "target": 50000,
      "state": "complete",
-     "label": "训练 1,600 组 / 验证 179 组"
+     "label": "LeRobot DP"
     }
    ],
-   "groups": []
-  },
-  {
-   "id": "aura_fine_unified_visual_pick_factory_gear_mesh",
-   "state": "trained",
-   "task": "pick_factory_gear_mesh",
-   "expected": null,
-   "updated_at": 1795346296.4739604,
-   "title": "齿轮啮合 · 独立视觉头",
-   "family": "AURA 装配 · 四项任务独立视觉头",
-   "task_label": "齿轮啮合",
-   "connection": "online",
-   "live_groups": 0,
-   "training": [
+   "groups": [
     {
-     "current": 10000,
-     "target": 10000,
-     "state": "complete",
-     "label": "训练 1,600 组 / 验证 179 组"
-    }
-   ],
-   "groups": []
-  },
-  {
-   "id": "aura_fine_unified_visual_pick_usb_insert_laptop",
-   "state": "trained",
-   "task": "pick_usb_insert_laptop",
-   "expected": null,
-   "updated_at": 1795346296.4739604,
-   "title": "USB 插入 · 独立视觉头",
-   "family": "AURA 装配 · 四项任务独立视觉头",
-   "task_label": "USB 插入",
-   "connection": "online",
-   "live_groups": 0,
-   "training": [
+     "name": "Franka",
+     "expected": 20,
+     "completed": 20,
+     "grasp": 19,
+     "grasp_unknown": 0,
+     "hang": 15,
+     "hang_unknown": 0,
+     "place": null
+    },
     {
-     "current": 10000,
-     "target": 10000,
-     "state": "complete",
-     "label": "训练 1,600 组 / 验证 179 组"
-    }
-   ],
-   "groups": []
-  },
-  {
-   "id": "aura_fine_unified_visual_pick_hammer_place_on_nail",
-   "state": "trained",
-   "task": "pick_hammer_place_on_nail",
-   "expected": null,
-   "updated_at": 1795346296.4739604,
-   "title": "锤头对准钉帽 · 独立视觉头",
-   "family": "AURA 装配 · 四项任务独立视觉头",
-   "task_label": "锤头对准钉帽",
-   "connection": "online",
-   "live_groups": 0,
-   "training": [
+     "name": "UR5e",
+     "expected": 20,
+     "completed": 20,
+     "grasp": 20,
+     "grasp_unknown": 0,
+     "hang": 9,
+     "hang_unknown": 0,
+     "place": null
+    },
     {
-     "current": 10000,
-     "target": 10000,
-     "state": "complete",
-     "label": "训练 1,600 组 / 验证 179 组"
+     "name": "xArm7",
+     "expected": 20,
+     "completed": 20,
+     "grasp": 20,
+     "grasp_unknown": 0,
+     "hang": 10,
+     "hang_unknown": 0,
+     "place": null
+    },
+    {
+     "name": "Kinova",
+     "expected": 20,
+     "completed": 20,
+     "grasp": 19,
+     "grasp_unknown": 0,
+     "hang": 9,
+     "hang_unknown": 0,
+     "place": null
+    },
+    {
+     "name": "Sawyer",
+     "expected": 20,
+     "completed": 20,
+     "grasp": 18,
+     "grasp_unknown": 0,
+     "hang": 3,
+     "hang_unknown": 0,
+     "place": null
     }
-   ],
-   "groups": []
+   ]
   },
   {
    "id": "aghost_franka100_coffee_frozen",
@@ -4965,263 +5166,14 @@
    ]
   },
   {
-   "id": "completed24_eval104_coffee_align_geometry",
-   "state": "stopped",
-   "task": "pick_mugcup_place_coffeemachine",
-   "expected": 100,
-   "audited": false,
-   "updated_at": 1795346316.659926,
-   "title": "咖啡机 · DINOv2 对齐＋几何",
-   "family": "24 训练模型 · 104 六组正式评测",
-   "task_label": "咖啡机放杯",
-   "connection": "online",
-   "live_groups": 0,
-   "training": [
-    {
-     "current": 10000,
-     "target": 10000,
-     "state": "complete",
-     "label": "视觉对齐＋几何"
-    },
-    {
-     "current": 50000,
-     "target": 50000,
-     "state": "complete",
-     "label": "ACT"
-    }
-   ],
-   "groups": [
-    {
-     "name": "Franka",
-     "expected": 20,
-     "completed": 16,
-     "grasp": 15,
-     "grasp_unknown": 0,
-     "hang": null,
-     "place": 9,
-     "place_unknown": 0
-    },
-    {
-     "name": "UR5e",
-     "expected": 20,
-     "completed": 10,
-     "grasp": 10,
-     "grasp_unknown": 0,
-     "hang": null,
-     "place": 6,
-     "place_unknown": 0
-    },
-    {
-     "name": "xArm7",
-     "expected": 20,
-     "completed": 16,
-     "grasp": 16,
-     "grasp_unknown": 0,
-     "hang": null,
-     "place": 8,
-     "place_unknown": 0
-    },
-    {
-     "name": "Kinova",
-     "expected": 20,
-     "completed": 8,
-     "grasp": 8,
-     "grasp_unknown": 0,
-     "hang": null,
-     "place": 2,
-     "place_unknown": 0
-    },
-    {
-     "name": "Sawyer",
-     "expected": 20,
-     "completed": 4,
-     "grasp": 4,
-     "grasp_unknown": 0,
-     "hang": null,
-     "place": 3,
-     "place_unknown": 0
-    }
-   ]
-  },
-  {
-   "id": "completed24_eval104_unified_oldgoal_aux",
-   "state": "stopped",
-   "task": "hang_cup",
-   "expected": 100,
-   "audited": false,
-   "updated_at": 1795346316.659926,
-   "title": "统一 DINO 头＋挂杯旧式 goal＋辅助监督",
-   "family": "24 训练模型 · 104 六组正式评测",
-   "task_label": "挂杯",
-   "connection": "online",
-   "live_groups": 0,
-   "training": [
-    {
-     "current": 10000,
-     "target": 10000,
-     "state": "complete",
-     "label": "区域"
-    },
-    {
-     "current": 10000,
-     "target": 10000,
-     "state": "complete",
-     "label": "结果"
-    },
-    {
-     "current": 50000,
-     "target": 50000,
-     "state": "complete",
-     "label": "ACT"
-    }
-   ],
-   "groups": [
-    {
-     "name": "Franka",
-     "expected": 20,
-     "completed": 7,
-     "grasp": 7,
-     "grasp_unknown": 0,
-     "hang": 5,
-     "hang_unknown": 0,
-     "place": null
-    },
-    {
-     "name": "UR5e",
-     "expected": 20,
-     "completed": 2,
-     "grasp": 2,
-     "grasp_unknown": 0,
-     "hang": 1,
-     "hang_unknown": 0,
-     "place": null
-    },
-    {
-     "name": "xArm7",
-     "expected": 20,
-     "completed": 2,
-     "grasp": 2,
-     "grasp_unknown": 0,
-     "hang": 1,
-     "hang_unknown": 0,
-     "place": null
-    },
-    {
-     "name": "Kinova",
-     "expected": 20,
-     "completed": 2,
-     "grasp": 2,
-     "grasp_unknown": 0,
-     "hang": 1,
-     "hang_unknown": 0,
-     "place": null
-    },
-    {
-     "name": "Sawyer",
-     "expected": 20,
-     "completed": 0,
-     "grasp": 0,
-     "grasp_unknown": 0,
-     "hang": 0,
-     "hang_unknown": 0,
-     "place": null
-    }
-   ]
-  },
-  {
-   "id": "completed24_eval104_unified_irg_affsup",
-   "state": "stopped",
-   "task": "hang_cup",
-   "expected": 100,
-   "audited": false,
-   "updated_at": 1795346316.659926,
-   "title": "统一 DINO 头＋挂杯 IRG-AffSup",
-   "family": "24 训练模型 · 104 六组正式评测",
-   "task_label": "挂杯",
-   "connection": "online",
-   "live_groups": 0,
-   "training": [
-    {
-     "current": 10000,
-     "target": 10000,
-     "state": "complete",
-     "label": "区域"
-    },
-    {
-     "current": 10000,
-     "target": 10000,
-     "state": "complete",
-     "label": "结果"
-    },
-    {
-     "current": 50000,
-     "target": 50000,
-     "state": "complete",
-     "label": "ACT"
-    }
-   ],
-   "groups": [
-    {
-     "name": "Franka",
-     "expected": 20,
-     "completed": 4,
-     "grasp": 4,
-     "grasp_unknown": 0,
-     "hang": 0,
-     "hang_unknown": 0,
-     "place": null
-    },
-    {
-     "name": "UR5e",
-     "expected": 20,
-     "completed": 2,
-     "grasp": 2,
-     "grasp_unknown": 0,
-     "hang": 1,
-     "hang_unknown": 0,
-     "place": null
-    },
-    {
-     "name": "xArm7",
-     "expected": 20,
-     "completed": 2,
-     "grasp": 2,
-     "grasp_unknown": 0,
-     "hang": 1,
-     "hang_unknown": 0,
-     "place": null
-    },
-    {
-     "name": "Kinova",
-     "expected": 20,
-     "completed": 0,
-     "grasp": 0,
-     "grasp_unknown": 0,
-     "hang": 0,
-     "hang_unknown": 0,
-     "place": null
-    },
-    {
-     "name": "Sawyer",
-     "expected": 20,
-     "completed": 0,
-     "grasp": 0,
-     "grasp_unknown": 0,
-     "hang": 0,
-     "hang_unknown": 0,
-     "place": null
-    }
-   ]
-  },
-  {
    "id": "lerobot24_dino_align_geometry",
-   "state": "complete",
+   "state": "trained",
    "task": "hang_cup",
-   "expected": 100,
+   "expected": null,
    "audited": true,
-   "updated_at": 1795346316.659926,
+   "updated_at": 1794943094.9962735,
    "title": "换臂对齐＋几何辅助 · DINOv2-B/14-reg4＋LeRobot ACT",
-   "family": "24 训练模型 · 104 六组正式评测",
+   "family": "LeRobot ACT · 挂杯训练 · 预测8步／执行1步",
    "task_label": "挂杯",
    "connection": "online",
    "live_groups": 0,
@@ -5239,68 +5191,17 @@
      "label": "LeRobot ACT"
     }
    ],
-   "groups": [
-    {
-     "name": "Franka",
-     "expected": 20,
-     "completed": 20,
-     "grasp": 19,
-     "grasp_unknown": 0,
-     "hang": 11,
-     "hang_unknown": 0,
-     "place": null
-    },
-    {
-     "name": "UR5e",
-     "expected": 20,
-     "completed": 20,
-     "grasp": 20,
-     "grasp_unknown": 0,
-     "hang": 12,
-     "hang_unknown": 0,
-     "place": null
-    },
-    {
-     "name": "xArm7",
-     "expected": 20,
-     "completed": 20,
-     "grasp": 20,
-     "grasp_unknown": 0,
-     "hang": 12,
-     "hang_unknown": 0,
-     "place": null
-    },
-    {
-     "name": "Kinova",
-     "expected": 20,
-     "completed": 20,
-     "grasp": 20,
-     "grasp_unknown": 0,
-     "hang": 15,
-     "hang_unknown": 0,
-     "place": null
-    },
-    {
-     "name": "Sawyer",
-     "expected": 20,
-     "completed": 20,
-     "grasp": 20,
-     "grasp_unknown": 0,
-     "hang": 9,
-     "hang_unknown": 0,
-     "place": null
-    }
-   ]
+   "groups": []
   },
   {
    "id": "lerobot24_resnet_align_geometry",
-   "state": "complete",
+   "state": "trained",
    "task": "hang_cup",
-   "expected": 100,
+   "expected": null,
    "audited": true,
-   "updated_at": 1795346316.659926,
+   "updated_at": 1794938524.5829606,
    "title": "换臂对齐＋几何辅助 · ResNet18＋LeRobot ACT",
-   "family": "24 训练模型 · 104 六组正式评测",
+   "family": "LeRobot ACT · 挂杯训练 · 预测8步／执行1步",
    "task_label": "挂杯",
    "connection": "online",
    "live_groups": 0,
@@ -5318,530 +5219,17 @@
      "label": "LeRobot ACT"
     }
    ],
-   "groups": [
-    {
-     "name": "Franka",
-     "expected": 20,
-     "completed": 20,
-     "grasp": 19,
-     "grasp_unknown": 0,
-     "hang": 9,
-     "hang_unknown": 0,
-     "place": null
-    },
-    {
-     "name": "UR5e",
-     "expected": 20,
-     "completed": 20,
-     "grasp": 20,
-     "grasp_unknown": 0,
-     "hang": 13,
-     "hang_unknown": 0,
-     "place": null
-    },
-    {
-     "name": "xArm7",
-     "expected": 20,
-     "completed": 20,
-     "grasp": 20,
-     "grasp_unknown": 0,
-     "hang": 8,
-     "hang_unknown": 0,
-     "place": null
-    },
-    {
-     "name": "Kinova",
-     "expected": 20,
-     "completed": 20,
-     "grasp": 19,
-     "grasp_unknown": 0,
-     "hang": 14,
-     "hang_unknown": 0,
-     "place": null
-    },
-    {
-     "name": "Sawyer",
-     "expected": 20,
-     "completed": 20,
-     "grasp": 20,
-     "grasp_unknown": 0,
-     "hang": 8,
-     "hang_unknown": 0,
-     "place": null
-    }
-   ]
+   "groups": []
   },
   {
    "id": "lerobot24_resnet_franka400",
-   "state": "complete",
-   "task": "hang_cup",
-   "expected": 100,
-   "audited": true,
-   "updated_at": 1795346316.659926,
-   "title": "默认ResNet18＋LeRobot ACT · Franka400基线",
-   "family": "24 训练模型 · 104 六组正式评测",
-   "task_label": "挂杯",
-   "connection": "online",
-   "live_groups": 0,
-   "training": [
-    {
-     "current": 50000,
-     "target": 50000,
-     "state": "complete",
-     "label": "LeRobot ACT"
-    }
-   ],
-   "groups": [
-    {
-     "name": "Franka",
-     "expected": 20,
-     "completed": 20,
-     "grasp": 20,
-     "grasp_unknown": 0,
-     "hang": 15,
-     "hang_unknown": 0,
-     "place": null
-    },
-    {
-     "name": "UR5e",
-     "expected": 20,
-     "completed": 20,
-     "grasp": 20,
-     "grasp_unknown": 0,
-     "hang": 0,
-     "hang_unknown": 0,
-     "place": null
-    },
-    {
-     "name": "xArm7",
-     "expected": 20,
-     "completed": 20,
-     "grasp": 20,
-     "grasp_unknown": 0,
-     "hang": 0,
-     "hang_unknown": 0,
-     "place": null
-    },
-    {
-     "name": "Kinova",
-     "expected": 20,
-     "completed": 20,
-     "grasp": 19,
-     "grasp_unknown": 0,
-     "hang": 0,
-     "hang_unknown": 0,
-     "place": null
-    },
-    {
-     "name": "Sawyer",
-     "expected": 20,
-     "completed": 20,
-     "grasp": 20,
-     "grasp_unknown": 0,
-     "hang": 0,
-     "hang_unknown": 0,
-     "place": null
-    }
-   ]
-  },
-  {
-   "id": "lerobot24_resnet_align_only",
-   "state": "stopped",
-   "task": "hang_cup",
-   "expected": 100,
-   "audited": false,
-   "updated_at": 1795346316.659926,
-   "title": "默认 ResNet18＋LeRobot ACT · Franka400 基线＋换臂对齐",
-   "family": "LeRobot ACT · 换臂对齐与几何辅助 · 104 四组评测",
-   "task_label": "挂杯",
-   "connection": "online",
-   "live_groups": 0,
-   "training": [
-    {
-     "current": 10000,
-     "target": 10000,
-     "state": "complete",
-     "label": "换臂对齐"
-    },
-    {
-     "current": 50000,
-     "target": 50000,
-     "state": "complete",
-     "label": "LeRobot ACT"
-    }
-   ],
-   "groups": [
-    {
-     "name": "Franka",
-     "expected": 20,
-     "completed": 20,
-     "grasp": 20,
-     "grasp_unknown": 0,
-     "hang": 7,
-     "hang_unknown": 0,
-     "place": null
-    },
-    {
-     "name": "UR5e",
-     "expected": 20,
-     "completed": 20,
-     "grasp": 20,
-     "grasp_unknown": 0,
-     "hang": 10,
-     "hang_unknown": 0,
-     "place": null
-    },
-    {
-     "name": "xArm7",
-     "expected": 20,
-     "completed": 20,
-     "grasp": 20,
-     "grasp_unknown": 0,
-     "hang": 8,
-     "hang_unknown": 0,
-     "place": null
-    },
-    {
-     "name": "Kinova",
-     "expected": 20,
-     "completed": 20,
-     "grasp": 20,
-     "grasp_unknown": 0,
-     "hang": 13,
-     "hang_unknown": 0,
-     "place": null
-    },
-    {
-     "name": "Sawyer",
-     "expected": 20,
-     "completed": 20,
-     "grasp": 20,
-     "grasp_unknown": 0,
-     "hang": 7,
-     "hang_unknown": 0,
-     "place": null
-    }
-   ]
-  },
-  {
-   "id": "lerobot24_resnet_geometry_only",
-   "state": "stopped",
-   "task": "hang_cup",
-   "expected": 100,
-   "audited": false,
-   "updated_at": 1795346316.659926,
-   "title": "默认 ResNet18＋LeRobot ACT · Franka400 基线＋几何辅助",
-   "family": "LeRobot ACT · 换臂对齐与几何辅助 · 104 四组评测",
-   "task_label": "挂杯",
-   "connection": "online",
-   "live_groups": 0,
-   "training": [
-    {
-     "current": 10000,
-     "target": 10000,
-     "state": "complete",
-     "label": "几何辅助"
-    },
-    {
-     "current": 50000,
-     "target": 50000,
-     "state": "complete",
-     "label": "LeRobot ACT"
-    }
-   ],
-   "groups": [
-    {
-     "name": "Franka",
-     "expected": 20,
-     "completed": 20,
-     "grasp": 20,
-     "grasp_unknown": 0,
-     "hang": 10,
-     "hang_unknown": 0,
-     "place": null
-    },
-    {
-     "name": "UR5e",
-     "expected": 20,
-     "completed": 20,
-     "grasp": 20,
-     "grasp_unknown": 0,
-     "hang": 15,
-     "hang_unknown": 0,
-     "place": null
-    },
-    {
-     "name": "xArm7",
-     "expected": 20,
-     "completed": 20,
-     "grasp": 20,
-     "grasp_unknown": 0,
-     "hang": 10,
-     "hang_unknown": 0,
-     "place": null
-    },
-    {
-     "name": "Kinova",
-     "expected": 20,
-     "completed": 20,
-     "grasp": 20,
-     "grasp_unknown": 0,
-     "hang": 8,
-     "hang_unknown": 0,
-     "place": null
-    },
-    {
-     "name": "Sawyer",
-     "expected": 20,
-     "completed": 20,
-     "grasp": 20,
-     "grasp_unknown": 0,
-     "hang": 14,
-     "hang_unknown": 0,
-     "place": null
-    }
-   ]
-  },
-  {
-   "id": "lerobot24_dino_geometry_only",
-   "state": "stopped",
-   "task": "hang_cup",
-   "expected": 100,
-   "audited": false,
-   "updated_at": 1795346316.659926,
-   "title": "DINOv2-B/14-reg4＋LeRobot ACT · Franka400 基线＋几何辅助",
-   "family": "LeRobot ACT · 换臂对齐与几何辅助 · 104 四组评测",
-   "task_label": "挂杯",
-   "connection": "online",
-   "live_groups": 0,
-   "training": [
-    {
-     "current": 10000,
-     "target": 10000,
-     "state": "complete",
-     "label": "几何辅助"
-    },
-    {
-     "current": 50000,
-     "target": 50000,
-     "state": "complete",
-     "label": "LeRobot ACT"
-    }
-   ],
-   "groups": [
-    {
-     "name": "Franka",
-     "expected": 20,
-     "completed": 20,
-     "grasp": 18,
-     "grasp_unknown": 0,
-     "hang": 10,
-     "hang_unknown": 0,
-     "place": null
-    },
-    {
-     "name": "UR5e",
-     "expected": 20,
-     "completed": 20,
-     "grasp": 20,
-     "grasp_unknown": 0,
-     "hang": 4,
-     "hang_unknown": 0,
-     "place": null
-    },
-    {
-     "name": "xArm7",
-     "expected": 20,
-     "completed": 20,
-     "grasp": 20,
-     "grasp_unknown": 0,
-     "hang": 6,
-     "hang_unknown": 0,
-     "place": null
-    },
-    {
-     "name": "Kinova",
-     "expected": 20,
-     "completed": 20,
-     "grasp": 20,
-     "grasp_unknown": 0,
-     "hang": 8,
-     "hang_unknown": 0,
-     "place": null
-    },
-    {
-     "name": "Sawyer",
-     "expected": 20,
-     "completed": 20,
-     "grasp": 20,
-     "grasp_unknown": 0,
-     "hang": 7,
-     "hang_unknown": 0,
-     "place": null
-    }
-   ]
-  },
-  {
-   "id": "lerobot24_dino_align_only",
-   "state": "stopped",
-   "task": "hang_cup",
-   "expected": 100,
-   "audited": false,
-   "updated_at": 1795346316.659926,
-   "title": "DINOv2-B/14-reg4＋LeRobot ACT · Franka400 基线＋换臂对齐",
-   "family": "LeRobot ACT · 换臂对齐与几何辅助 · 104 四组评测",
-   "task_label": "挂杯",
-   "connection": "online",
-   "live_groups": 0,
-   "training": [
-    {
-     "current": 10000,
-     "target": 10000,
-     "state": "complete",
-     "label": "换臂对齐"
-    },
-    {
-     "current": 50000,
-     "target": 50000,
-     "state": "complete",
-     "label": "LeRobot ACT"
-    }
-   ],
-   "groups": [
-    {
-     "name": "Franka",
-     "expected": 20,
-     "completed": 20,
-     "grasp": 20,
-     "grasp_unknown": 0,
-     "hang": 10,
-     "hang_unknown": 0,
-     "place": null
-    },
-    {
-     "name": "UR5e",
-     "expected": 20,
-     "completed": 20,
-     "grasp": 20,
-     "grasp_unknown": 0,
-     "hang": 12,
-     "hang_unknown": 0,
-     "place": null
-    },
-    {
-     "name": "xArm7",
-     "expected": 20,
-     "completed": 20,
-     "grasp": 20,
-     "grasp_unknown": 0,
-     "hang": 14,
-     "hang_unknown": 0,
-     "place": null
-    },
-    {
-     "name": "Kinova",
-     "expected": 20,
-     "completed": 20,
-     "grasp": 20,
-     "grasp_unknown": 0,
-     "hang": 11,
-     "hang_unknown": 0,
-     "place": null
-    },
-    {
-     "name": "Sawyer",
-     "expected": 20,
-     "completed": 20,
-     "grasp": 20,
-     "grasp_unknown": 0,
-     "hang": 9,
-     "hang_unknown": 0,
-     "place": null
-    }
-   ]
-  },
-  {
-   "id": "dp_transfer104_hang_resnet_dp",
-   "state": "complete",
-   "task": "hang_cup",
-   "expected": 100,
-   "audited": true,
-   "updated_at": 1795115146.6369445,
-   "title": "ResNet18 原始 RGB＋LeRobot DP",
-   "family": "Diffusion Policy · 104 评测",
-   "task_label": "挂杯",
-   "connection": "online",
-   "live_groups": 0,
-   "training": [
-    {
-     "current": 50000,
-     "target": 50000,
-     "state": "complete",
-     "label": "DP"
-    }
-   ],
-   "groups": [
-    {
-     "name": "Franka",
-     "expected": 20,
-     "completed": 20,
-     "grasp": 19,
-     "grasp_unknown": 0,
-     "hang": 11,
-     "hang_unknown": 0,
-     "place": null
-    },
-    {
-     "name": "UR5e",
-     "expected": 20,
-     "completed": 20,
-     "grasp": 20,
-     "grasp_unknown": 0,
-     "hang": 1,
-     "hang_unknown": 0,
-     "place": null
-    },
-    {
-     "name": "xArm7",
-     "expected": 20,
-     "completed": 20,
-     "grasp": 20,
-     "grasp_unknown": 0,
-     "hang": 2,
-     "hang_unknown": 0,
-     "place": null
-    },
-    {
-     "name": "Kinova",
-     "expected": 20,
-     "completed": 20,
-     "grasp": 20,
-     "grasp_unknown": 0,
-     "hang": 2,
-     "hang_unknown": 0,
-     "place": null
-    },
-    {
-     "name": "Sawyer",
-     "expected": 20,
-     "completed": 20,
-     "grasp": 8,
-     "grasp_unknown": 0,
-     "hang": 2,
-     "hang_unknown": 0,
-     "place": null
-    }
-   ]
-  },
-  {
-   "id": "dp_transfer104_hang_dino_dp",
-   "state": "stopped",
+   "state": "trained",
    "task": "hang_cup",
    "expected": null,
-   "audited": false,
-   "updated_at": 1795115146.6369445,
-   "title": "冻结 DINOv2 特征＋LeRobot DP",
-   "family": "Diffusion Policy · 104 评测",
+   "audited": true,
+   "updated_at": 1794938518.772108,
+   "title": "默认ResNet18＋LeRobot ACT · Franka400基线",
+   "family": "LeRobot ACT · 挂杯训练 · 预测8步／执行1步",
    "task_label": "挂杯",
    "connection": "online",
    "live_groups": 0,
@@ -5850,142 +5238,18 @@
      "current": 50000,
      "target": 50000,
      "state": "complete",
-     "label": "DP"
+     "label": "LeRobot ACT"
     }
    ],
-   "groups": [
-    {
-     "name": "Franka",
-     "expected": null,
-     "completed": 12,
-     "grasp": 12,
-     "grasp_unknown": 0,
-     "hang": 7,
-     "hang_unknown": 0,
-     "place": null
-    },
-    {
-     "name": "UR5e",
-     "expected": null,
-     "completed": 10,
-     "grasp": 10,
-     "grasp_unknown": 0,
-     "hang": 5,
-     "hang_unknown": 0,
-     "place": null
-    },
-    {
-     "name": "xArm7",
-     "expected": null,
-     "completed": 9,
-     "grasp": 9,
-     "grasp_unknown": 0,
-     "hang": 6,
-     "hang_unknown": 0,
-     "place": null
-    },
-    {
-     "name": "Kinova",
-     "expected": null,
-     "completed": 4,
-     "grasp": 4,
-     "grasp_unknown": 0,
-     "hang": 3,
-     "hang_unknown": 0,
-     "place": null
-    },
-    {
-     "name": "Sawyer",
-     "expected": null,
-     "completed": 4,
-     "grasp": 4,
-     "grasp_unknown": 0,
-     "hang": 3,
-     "hang_unknown": 0,
-     "place": null
-    }
-   ]
-  },
-  {
-   "id": "dp_transfer104_coffee_plain_dp",
-   "state": "complete",
-   "task": "pick_mugcup_place_coffeemachine",
-   "expected": 100,
-   "audited": true,
-   "updated_at": 1795115146.6369445,
-   "title": "Franka100 纯 DP · GHOST/LeRobot",
-   "family": "Diffusion Policy · 104 评测",
-   "task_label": "咖啡机放杯",
-   "connection": "online",
-   "live_groups": 0,
-   "training": [
-    {
-     "current": 50000,
-     "target": 50000,
-     "state": "complete",
-     "label": "DP"
-    }
-   ],
-   "groups": [
-    {
-     "name": "Franka",
-     "expected": 20,
-     "completed": 20,
-     "grasp": 18,
-     "grasp_unknown": 0,
-     "hang": null,
-     "place": 18,
-     "place_unknown": 0
-    },
-    {
-     "name": "UR5e",
-     "expected": 20,
-     "completed": 20,
-     "grasp": 19,
-     "grasp_unknown": 0,
-     "hang": null,
-     "place": 18,
-     "place_unknown": 0
-    },
-    {
-     "name": "xArm7",
-     "expected": 20,
-     "completed": 20,
-     "grasp": 19,
-     "grasp_unknown": 0,
-     "hang": null,
-     "place": 11,
-     "place_unknown": 0
-    },
-    {
-     "name": "Kinova",
-     "expected": 20,
-     "completed": 20,
-     "grasp": 18,
-     "grasp_unknown": 0,
-     "hang": null,
-     "place": 18,
-     "place_unknown": 0
-    },
-    {
-     "name": "Sawyer",
-     "expected": 20,
-     "completed": 20,
-     "grasp": 19,
-     "grasp_unknown": 0,
-     "hang": null,
-     "place": 10,
-     "place_unknown": 0
-    }
-   ]
+   "groups": []
   },
   {
    "id": "dino_act_flow24_public_dino_act",
-   "state": "complete",
+   "state": "trained",
    "task": "hang_cup",
    "expected": 100,
    "audited": true,
-   "updated_at": 1795010840.1574159,
+   "updated_at": 1794991558.3153472,
    "title": "公开 DINOv2＋LeRobot ACT",
    "family": "DINOv2 ACT / Flow Matching 挂杯",
    "task_label": "挂杯",
@@ -5999,66 +5263,15 @@
      "label": "LeRobot ACT"
     }
    ],
-   "groups": [
-    {
-     "name": "Franka",
-     "expected": 20,
-     "completed": 20,
-     "grasp": 20,
-     "grasp_unknown": 0,
-     "hang": 8,
-     "hang_unknown": 0,
-     "place": null
-    },
-    {
-     "name": "UR5e",
-     "expected": 20,
-     "completed": 20,
-     "grasp": 20,
-     "grasp_unknown": 0,
-     "hang": 5,
-     "hang_unknown": 0,
-     "place": null
-    },
-    {
-     "name": "xArm7",
-     "expected": 20,
-     "completed": 20,
-     "grasp": 20,
-     "grasp_unknown": 0,
-     "hang": 6,
-     "hang_unknown": 0,
-     "place": null
-    },
-    {
-     "name": "Kinova",
-     "expected": 20,
-     "completed": 20,
-     "grasp": 19,
-     "grasp_unknown": 0,
-     "hang": 4,
-     "hang_unknown": 0,
-     "place": null
-    },
-    {
-     "name": "Sawyer",
-     "expected": 20,
-     "completed": 20,
-     "grasp": 20,
-     "grasp_unknown": 0,
-     "hang": 4,
-     "hang_unknown": 0,
-     "place": null
-    }
-   ]
+   "groups": []
   },
   {
    "id": "dino_act_flow24_public_dino_flow",
-   "state": "complete",
+   "state": "trained",
    "task": "hang_cup",
    "expected": 100,
    "audited": true,
-   "updated_at": 1795010840.1574159,
+   "updated_at": 1794991962.5770297,
    "title": "公开 DINOv2＋Flow Matching U-Net",
    "family": "DINOv2 ACT / Flow Matching 挂杯",
    "task_label": "挂杯",
@@ -6072,66 +5285,15 @@
      "label": "Flow Matching U-Net"
     }
    ],
-   "groups": [
-    {
-     "name": "Franka",
-     "expected": 20,
-     "completed": 20,
-     "grasp": 19,
-     "grasp_unknown": 0,
-     "hang": 1,
-     "hang_unknown": 0,
-     "place": null
-    },
-    {
-     "name": "UR5e",
-     "expected": 20,
-     "completed": 20,
-     "grasp": 13,
-     "grasp_unknown": 0,
-     "hang": 4,
-     "hang_unknown": 0,
-     "place": null
-    },
-    {
-     "name": "xArm7",
-     "expected": 20,
-     "completed": 20,
-     "grasp": 16,
-     "grasp_unknown": 0,
-     "hang": 3,
-     "hang_unknown": 0,
-     "place": null
-    },
-    {
-     "name": "Kinova",
-     "expected": 20,
-     "completed": 20,
-     "grasp": 11,
-     "grasp_unknown": 0,
-     "hang": 0,
-     "hang_unknown": 0,
-     "place": null
-    },
-    {
-     "name": "Sawyer",
-     "expected": 20,
-     "completed": 20,
-     "grasp": 20,
-     "grasp_unknown": 0,
-     "hang": 4,
-     "hang_unknown": 0,
-     "place": null
-    }
-   ]
+   "groups": []
   },
   {
    "id": "dino_act_flow24_aligned_dino_flow",
-   "state": "complete",
+   "state": "trained",
    "task": "hang_cup",
    "expected": 100,
    "audited": true,
-   "updated_at": 1795010840.1574159,
+   "updated_at": 1794992022.5503485,
    "title": "仅对齐 DINOv2＋Flow Matching U-Net",
    "family": "DINOv2 ACT / Flow Matching 挂杯",
    "task_label": "挂杯",
@@ -6145,66 +5307,15 @@
      "label": "Flow Matching U-Net"
     }
    ],
-   "groups": [
-    {
-     "name": "Franka",
-     "expected": 20,
-     "completed": 20,
-     "grasp": 20,
-     "grasp_unknown": 0,
-     "hang": 3,
-     "hang_unknown": 0,
-     "place": null
-    },
-    {
-     "name": "UR5e",
-     "expected": 20,
-     "completed": 20,
-     "grasp": 20,
-     "grasp_unknown": 0,
-     "hang": 6,
-     "hang_unknown": 0,
-     "place": null
-    },
-    {
-     "name": "xArm7",
-     "expected": 20,
-     "completed": 20,
-     "grasp": 20,
-     "grasp_unknown": 0,
-     "hang": 3,
-     "hang_unknown": 0,
-     "place": null
-    },
-    {
-     "name": "Kinova",
-     "expected": 20,
-     "completed": 20,
-     "grasp": 20,
-     "grasp_unknown": 0,
-     "hang": 3,
-     "hang_unknown": 0,
-     "place": null
-    },
-    {
-     "name": "Sawyer",
-     "expected": 20,
-     "completed": 20,
-     "grasp": 19,
-     "grasp_unknown": 0,
-     "hang": 3,
-     "hang_unknown": 0,
-     "place": null
-    }
-   ]
+   "groups": []
   },
   {
    "id": "lerobot_unfrozen24_dino_align_only",
-   "state": "complete",
+   "state": "trained",
    "task": "hang_cup",
    "expected": 100,
    "audited": true,
-   "updated_at": 1795012700.7412608,
+   "updated_at": 1795007558.2347977,
    "title": "DINOv2-B/14-reg4＋LeRobot ACT · 换臂对齐＋视觉参与动作训练",
    "family": "换臂对齐＋端到端 ACT · 挂杯",
    "task_label": "挂杯",
@@ -6218,66 +5329,15 @@
      "label": "LeRobot ACT"
     }
    ],
-   "groups": [
-    {
-     "name": "Franka",
-     "expected": 20,
-     "completed": 20,
-     "grasp": 20,
-     "grasp_unknown": 0,
-     "hang": 4,
-     "hang_unknown": 0,
-     "place": null
-    },
-    {
-     "name": "UR5e",
-     "expected": 20,
-     "completed": 20,
-     "grasp": 20,
-     "grasp_unknown": 0,
-     "hang": 5,
-     "hang_unknown": 0,
-     "place": null
-    },
-    {
-     "name": "xArm7",
-     "expected": 20,
-     "completed": 20,
-     "grasp": 20,
-     "grasp_unknown": 0,
-     "hang": 7,
-     "hang_unknown": 0,
-     "place": null
-    },
-    {
-     "name": "Kinova",
-     "expected": 20,
-     "completed": 20,
-     "grasp": 20,
-     "grasp_unknown": 0,
-     "hang": 10,
-     "hang_unknown": 0,
-     "place": null
-    },
-    {
-     "name": "Sawyer",
-     "expected": 20,
-     "completed": 20,
-     "grasp": 20,
-     "grasp_unknown": 0,
-     "hang": 10,
-     "hang_unknown": 0,
-     "place": null
-    }
-   ]
+   "groups": []
   },
   {
    "id": "lerobot_unfrozen24_resnet_align_only",
-   "state": "complete",
+   "state": "trained",
    "task": "hang_cup",
    "expected": 100,
    "audited": true,
-   "updated_at": 1795012700.7412608,
+   "updated_at": 1794999690.3015423,
    "title": "ResNet18＋LeRobot ACT · 换臂对齐＋视觉参与动作训练",
    "family": "换臂对齐＋端到端 ACT · 挂杯",
    "task_label": "挂杯",
@@ -6291,131 +5351,7 @@
      "label": "LeRobot ACT"
     }
    ],
-   "groups": [
-    {
-     "name": "Franka",
-     "expected": 20,
-     "completed": 20,
-     "grasp": 20,
-     "grasp_unknown": 0,
-     "hang": 12,
-     "hang_unknown": 0,
-     "place": null
-    },
-    {
-     "name": "UR5e",
-     "expected": 20,
-     "completed": 20,
-     "grasp": 20,
-     "grasp_unknown": 0,
-     "hang": 4,
-     "hang_unknown": 0,
-     "place": null
-    },
-    {
-     "name": "xArm7",
-     "expected": 20,
-     "completed": 20,
-     "grasp": 20,
-     "grasp_unknown": 0,
-     "hang": 4,
-     "hang_unknown": 0,
-     "place": null
-    },
-    {
-     "name": "Kinova",
-     "expected": 20,
-     "completed": 20,
-     "grasp": 20,
-     "grasp_unknown": 0,
-     "hang": 2,
-     "hang_unknown": 0,
-     "place": null
-    },
-    {
-     "name": "Sawyer",
-     "expected": 20,
-     "completed": 20,
-     "grasp": 20,
-     "grasp_unknown": 0,
-     "hang": 1,
-     "hang_unknown": 0,
-     "place": null
-    }
-   ]
-  },
-  {
-   "id": "hang_dino_joint_dp24_gpu0",
-   "state": "complete",
-   "task": "hang_cup",
-   "expected": 100,
-   "audited": true,
-   "updated_at": 1795108314.457011,
-   "title": "DINOv2-B/14-reg4＋LeRobot DP · 视觉参与反传",
-   "family": "LeRobot DP · 挂杯",
-   "task_label": "挂杯",
-   "connection": "online",
-   "live_groups": 0,
-   "training": [
-    {
-     "current": 50000,
-     "target": 50000,
-     "state": "complete",
-     "label": "LeRobot DP"
-    }
-   ],
-   "groups": [
-    {
-     "name": "Franka",
-     "expected": 20,
-     "completed": 20,
-     "grasp": 19,
-     "grasp_unknown": 0,
-     "hang": 15,
-     "hang_unknown": 0,
-     "place": null
-    },
-    {
-     "name": "UR5e",
-     "expected": 20,
-     "completed": 20,
-     "grasp": 20,
-     "grasp_unknown": 0,
-     "hang": 9,
-     "hang_unknown": 0,
-     "place": null
-    },
-    {
-     "name": "xArm7",
-     "expected": 20,
-     "completed": 20,
-     "grasp": 20,
-     "grasp_unknown": 0,
-     "hang": 10,
-     "hang_unknown": 0,
-     "place": null
-    },
-    {
-     "name": "Kinova",
-     "expected": 20,
-     "completed": 20,
-     "grasp": 19,
-     "grasp_unknown": 0,
-     "hang": 9,
-     "hang_unknown": 0,
-     "place": null
-    },
-    {
-     "name": "Sawyer",
-     "expected": 20,
-     "completed": 20,
-     "grasp": 18,
-     "grasp_unknown": 0,
-     "hang": 3,
-     "hang_unknown": 0,
-     "place": null
-    }
-   ]
+   "groups": []
   },
   {
    "id": "rgbact133_temporal_dinov2",
@@ -6423,7 +5359,7 @@
    "task": "hang_cup",
    "expected": 100,
    "audited": true,
-   "updated_at": 1795346341.6647358,
+   "updated_at": 1795346408.426853,
    "title": "DINOv2-B/14＋ACT · 时间集成",
    "family": "ACT时间集成重测 · 原始RGB ACT配置",
    "task_label": "挂杯",
@@ -6502,7 +5438,7 @@
    "task": "hang_cup",
    "expected": 100,
    "audited": true,
-   "updated_at": 1795346341.673902,
+   "updated_at": 1795346408.4361567,
    "title": "原始 ResNet18 编码器＋ACT · 时间集成",
    "family": "ACT时间集成重测 · 原始RGB ACT配置",
    "task_label": "挂杯",
@@ -6581,7 +5517,7 @@
    "task": "hang_cup",
    "expected": 100,
    "audited": false,
-   "updated_at": 1795346341.458576,
+   "updated_at": 1795346408.2235565,
    "title": "挂杯 DINOv2 · 对齐＋几何",
    "family": "新增六项测试队列 · 时间集成 K=8／每步重预测",
    "task_label": "挂杯",
@@ -6660,7 +5596,7 @@
    "task": "hang_cup",
    "expected": 100,
    "audited": false,
-   "updated_at": 1795346341.4621296,
+   "updated_at": 1795346408.2261875,
    "title": "挂杯 DINOv2 · 仅对齐",
    "family": "新增六项测试队列 · 时间集成 K=8／每步重预测",
    "task_label": "挂杯",
@@ -6739,7 +5675,7 @@
    "task": "hang_cup",
    "expected": 100,
    "audited": false,
-   "updated_at": 1795346341.4657,
+   "updated_at": 1795346408.2287633,
    "title": "挂杯 DINOv2 · 对齐＋几何＋自特征保持",
    "family": "新增六项测试队列 · 时间集成 K=8／每步重预测",
    "task_label": "挂杯",
@@ -6818,7 +5754,7 @@
    "task": "hang_cup",
    "expected": 100,
    "audited": false,
-   "updated_at": 1795346341.4693341,
+   "updated_at": 1795346408.2313707,
    "title": "挂杯 · IRG-AffSup",
    "family": "新增六项测试队列 · 时间集成 K=8／每步重预测",
    "task_label": "挂杯",
@@ -6891,7 +5827,7 @@
    "task": "hang_cup",
    "expected": 100,
    "audited": false,
-   "updated_at": 1795346341.4730613,
+   "updated_at": 1795346408.233976,
    "title": "挂杯 · 旧式goal＋辅助监督",
    "family": "新增六项测试队列 · 时间集成 K=8／每步重预测",
    "task_label": "挂杯",
@@ -6964,7 +5900,7 @@
    "task": "hang_cup",
    "expected": 100,
    "audited": false,
-   "updated_at": 1795346341.476563,
+   "updated_at": 1795346408.236473,
    "title": "单Franka400 · 原始RGB纯ACT",
    "family": "新增六项测试队列 · 时间集成 K=8／每步重预测",
    "task_label": "挂杯",
@@ -7037,7 +5973,7 @@
    "task": "hang_cup",
    "expected": 100,
    "audited": true,
-   "updated_at": 1795346341.5259943,
+   "updated_at": 1795346408.273221,
    "title": "换臂对齐＋几何辅助 · DINOv2-B/14＋ACT",
    "family": "本轮ACT时间集成 · K=8／每步重预测",
    "task_label": "挂杯",
@@ -7116,7 +6052,7 @@
    "task": "hang_cup",
    "expected": 100,
    "audited": true,
-   "updated_at": 1795346341.5298862,
+   "updated_at": 1795346408.276083,
    "title": "换臂对齐＋几何辅助 · 原始 ResNet18 编码器＋ACT",
    "family": "本轮ACT时间集成 · K=8／每步重预测",
    "task_label": "挂杯",
@@ -7195,7 +6131,7 @@
    "task": "hang_cup",
    "expected": 100,
    "audited": true,
-   "updated_at": 1795346341.5337563,
+   "updated_at": 1795346408.2789102,
    "title": "D · 换臂特征对齐＋几何辅助",
    "family": "本轮ACT时间集成 · K=8／每步重预测",
    "task_label": "挂杯",
@@ -8782,167 +7718,1004 @@
     }
    ],
    "groups": []
+  },
+  {
+   "id": "aura_fine_unified_visual_pick_factory_peg_insert",
+   "state": "trained",
+   "task": "pick_factory_peg_insert",
+   "expected": null,
+   "updated_at": 1795346341.690272,
+   "title": "插销入孔 · 独立视觉头",
+   "family": "AURA 装配 · 四项任务独立视觉头",
+   "task_label": "插销入孔",
+   "connection": "online",
+   "live_groups": 0,
+   "training": [
+    {
+     "current": 10000,
+     "target": 10000,
+     "state": "complete",
+     "label": "训练 1,600 组 / 验证 179 组"
+    }
+   ],
+   "groups": []
+  },
+  {
+   "id": "aura_fine_unified_visual_pick_factory_gear_mesh",
+   "state": "trained",
+   "task": "pick_factory_gear_mesh",
+   "expected": null,
+   "updated_at": 1795346341.690272,
+   "title": "齿轮啮合 · 独立视觉头",
+   "family": "AURA 装配 · 四项任务独立视觉头",
+   "task_label": "齿轮啮合",
+   "connection": "online",
+   "live_groups": 0,
+   "training": [
+    {
+     "current": 10000,
+     "target": 10000,
+     "state": "complete",
+     "label": "训练 1,600 组 / 验证 179 组"
+    }
+   ],
+   "groups": []
+  },
+  {
+   "id": "aura_fine_unified_visual_pick_usb_insert_laptop",
+   "state": "trained",
+   "task": "pick_usb_insert_laptop",
+   "expected": null,
+   "updated_at": 1795346341.690272,
+   "title": "USB 插入 · 独立视觉头",
+   "family": "AURA 装配 · 四项任务独立视觉头",
+   "task_label": "USB 插入",
+   "connection": "online",
+   "live_groups": 0,
+   "training": [
+    {
+     "current": 10000,
+     "target": 10000,
+     "state": "complete",
+     "label": "训练 1,600 组 / 验证 179 组"
+    }
+   ],
+   "groups": []
+  },
+  {
+   "id": "aura_fine_unified_visual_pick_hammer_place_on_nail",
+   "state": "trained",
+   "task": "pick_hammer_place_on_nail",
+   "expected": null,
+   "updated_at": 1795346341.690272,
+   "title": "锤头对准钉帽 · 独立视觉头",
+   "family": "AURA 装配 · 四项任务独立视觉头",
+   "task_label": "锤头对准钉帽",
+   "connection": "online",
+   "live_groups": 0,
+   "training": [
+    {
+     "current": 10000,
+     "target": 10000,
+     "state": "complete",
+     "label": "训练 1,600 组 / 验证 179 组"
+    }
+   ],
+   "groups": []
+  },
+  {
+   "id": "completed24_eval104_coffee_align_geometry",
+   "state": "stopped",
+   "task": "pick_mugcup_place_coffeemachine",
+   "expected": 100,
+   "audited": false,
+   "updated_at": 1795346316.659926,
+   "title": "咖啡机 · DINOv2 对齐＋几何",
+   "family": "24 训练模型 · 104 六组正式评测",
+   "task_label": "咖啡机放杯",
+   "connection": "online",
+   "live_groups": 0,
+   "training": [
+    {
+     "current": 10000,
+     "target": 10000,
+     "state": "complete",
+     "label": "视觉对齐＋几何"
+    },
+    {
+     "current": 50000,
+     "target": 50000,
+     "state": "complete",
+     "label": "ACT"
+    }
+   ],
+   "groups": [
+    {
+     "name": "Franka",
+     "expected": 20,
+     "completed": 16,
+     "grasp": 15,
+     "grasp_unknown": 0,
+     "hang": null,
+     "place": 9,
+     "place_unknown": 0
+    },
+    {
+     "name": "UR5e",
+     "expected": 20,
+     "completed": 10,
+     "grasp": 10,
+     "grasp_unknown": 0,
+     "hang": null,
+     "place": 6,
+     "place_unknown": 0
+    },
+    {
+     "name": "xArm7",
+     "expected": 20,
+     "completed": 16,
+     "grasp": 16,
+     "grasp_unknown": 0,
+     "hang": null,
+     "place": 8,
+     "place_unknown": 0
+    },
+    {
+     "name": "Kinova",
+     "expected": 20,
+     "completed": 8,
+     "grasp": 8,
+     "grasp_unknown": 0,
+     "hang": null,
+     "place": 2,
+     "place_unknown": 0
+    },
+    {
+     "name": "Sawyer",
+     "expected": 20,
+     "completed": 4,
+     "grasp": 4,
+     "grasp_unknown": 0,
+     "hang": null,
+     "place": 3,
+     "place_unknown": 0
+    }
+   ]
+  },
+  {
+   "id": "completed24_eval104_unified_oldgoal_aux",
+   "state": "stopped",
+   "task": "hang_cup",
+   "expected": 100,
+   "audited": false,
+   "updated_at": 1795346316.659926,
+   "title": "统一 DINO 头＋挂杯旧式 goal＋辅助监督",
+   "family": "24 训练模型 · 104 六组正式评测",
+   "task_label": "挂杯",
+   "connection": "online",
+   "live_groups": 0,
+   "training": [
+    {
+     "current": 10000,
+     "target": 10000,
+     "state": "complete",
+     "label": "区域"
+    },
+    {
+     "current": 10000,
+     "target": 10000,
+     "state": "complete",
+     "label": "结果"
+    },
+    {
+     "current": 50000,
+     "target": 50000,
+     "state": "complete",
+     "label": "ACT"
+    }
+   ],
+   "groups": [
+    {
+     "name": "Franka",
+     "expected": 20,
+     "completed": 7,
+     "grasp": 7,
+     "grasp_unknown": 0,
+     "hang": 5,
+     "hang_unknown": 0,
+     "place": null
+    },
+    {
+     "name": "UR5e",
+     "expected": 20,
+     "completed": 2,
+     "grasp": 2,
+     "grasp_unknown": 0,
+     "hang": 1,
+     "hang_unknown": 0,
+     "place": null
+    },
+    {
+     "name": "xArm7",
+     "expected": 20,
+     "completed": 2,
+     "grasp": 2,
+     "grasp_unknown": 0,
+     "hang": 1,
+     "hang_unknown": 0,
+     "place": null
+    },
+    {
+     "name": "Kinova",
+     "expected": 20,
+     "completed": 2,
+     "grasp": 2,
+     "grasp_unknown": 0,
+     "hang": 1,
+     "hang_unknown": 0,
+     "place": null
+    },
+    {
+     "name": "Sawyer",
+     "expected": 20,
+     "completed": 0,
+     "grasp": 0,
+     "grasp_unknown": 0,
+     "hang": 0,
+     "hang_unknown": 0,
+     "place": null
+    }
+   ]
+  },
+  {
+   "id": "completed24_eval104_unified_irg_affsup",
+   "state": "stopped",
+   "task": "hang_cup",
+   "expected": 100,
+   "audited": false,
+   "updated_at": 1795346316.659926,
+   "title": "统一 DINO 头＋挂杯 IRG-AffSup",
+   "family": "24 训练模型 · 104 六组正式评测",
+   "task_label": "挂杯",
+   "connection": "online",
+   "live_groups": 0,
+   "training": [
+    {
+     "current": 10000,
+     "target": 10000,
+     "state": "complete",
+     "label": "区域"
+    },
+    {
+     "current": 10000,
+     "target": 10000,
+     "state": "complete",
+     "label": "结果"
+    },
+    {
+     "current": 50000,
+     "target": 50000,
+     "state": "complete",
+     "label": "ACT"
+    }
+   ],
+   "groups": [
+    {
+     "name": "Franka",
+     "expected": 20,
+     "completed": 4,
+     "grasp": 4,
+     "grasp_unknown": 0,
+     "hang": 0,
+     "hang_unknown": 0,
+     "place": null
+    },
+    {
+     "name": "UR5e",
+     "expected": 20,
+     "completed": 2,
+     "grasp": 2,
+     "grasp_unknown": 0,
+     "hang": 1,
+     "hang_unknown": 0,
+     "place": null
+    },
+    {
+     "name": "xArm7",
+     "expected": 20,
+     "completed": 2,
+     "grasp": 2,
+     "grasp_unknown": 0,
+     "hang": 1,
+     "hang_unknown": 0,
+     "place": null
+    },
+    {
+     "name": "Kinova",
+     "expected": 20,
+     "completed": 0,
+     "grasp": 0,
+     "grasp_unknown": 0,
+     "hang": 0,
+     "hang_unknown": 0,
+     "place": null
+    },
+    {
+     "name": "Sawyer",
+     "expected": 20,
+     "completed": 0,
+     "grasp": 0,
+     "grasp_unknown": 0,
+     "hang": 0,
+     "hang_unknown": 0,
+     "place": null
+    }
+   ]
+  },
+  {
+   "id": "lerobot24_resnet_align_only",
+   "state": "stopped",
+   "task": "hang_cup",
+   "expected": 100,
+   "audited": false,
+   "updated_at": 1795346316.659926,
+   "title": "默认 ResNet18＋LeRobot ACT · Franka400 基线＋换臂对齐",
+   "family": "LeRobot ACT · 换臂对齐与几何辅助 · 104 四组评测",
+   "task_label": "挂杯",
+   "connection": "online",
+   "live_groups": 0,
+   "training": [
+    {
+     "current": 10000,
+     "target": 10000,
+     "state": "complete",
+     "label": "换臂对齐"
+    },
+    {
+     "current": 50000,
+     "target": 50000,
+     "state": "complete",
+     "label": "LeRobot ACT"
+    }
+   ],
+   "groups": [
+    {
+     "name": "Franka",
+     "expected": 20,
+     "completed": 20,
+     "grasp": 20,
+     "grasp_unknown": 0,
+     "hang": 7,
+     "hang_unknown": 0,
+     "place": null
+    },
+    {
+     "name": "UR5e",
+     "expected": 20,
+     "completed": 20,
+     "grasp": 20,
+     "grasp_unknown": 0,
+     "hang": 10,
+     "hang_unknown": 0,
+     "place": null
+    },
+    {
+     "name": "xArm7",
+     "expected": 20,
+     "completed": 20,
+     "grasp": 20,
+     "grasp_unknown": 0,
+     "hang": 8,
+     "hang_unknown": 0,
+     "place": null
+    },
+    {
+     "name": "Kinova",
+     "expected": 20,
+     "completed": 20,
+     "grasp": 20,
+     "grasp_unknown": 0,
+     "hang": 13,
+     "hang_unknown": 0,
+     "place": null
+    },
+    {
+     "name": "Sawyer",
+     "expected": 20,
+     "completed": 20,
+     "grasp": 20,
+     "grasp_unknown": 0,
+     "hang": 7,
+     "hang_unknown": 0,
+     "place": null
+    }
+   ]
+  },
+  {
+   "id": "lerobot24_resnet_geometry_only",
+   "state": "stopped",
+   "task": "hang_cup",
+   "expected": 100,
+   "audited": false,
+   "updated_at": 1795346316.659926,
+   "title": "默认 ResNet18＋LeRobot ACT · Franka400 基线＋几何辅助",
+   "family": "LeRobot ACT · 换臂对齐与几何辅助 · 104 四组评测",
+   "task_label": "挂杯",
+   "connection": "online",
+   "live_groups": 0,
+   "training": [
+    {
+     "current": 10000,
+     "target": 10000,
+     "state": "complete",
+     "label": "几何辅助"
+    },
+    {
+     "current": 50000,
+     "target": 50000,
+     "state": "complete",
+     "label": "LeRobot ACT"
+    }
+   ],
+   "groups": [
+    {
+     "name": "Franka",
+     "expected": 20,
+     "completed": 20,
+     "grasp": 20,
+     "grasp_unknown": 0,
+     "hang": 10,
+     "hang_unknown": 0,
+     "place": null
+    },
+    {
+     "name": "UR5e",
+     "expected": 20,
+     "completed": 20,
+     "grasp": 20,
+     "grasp_unknown": 0,
+     "hang": 15,
+     "hang_unknown": 0,
+     "place": null
+    },
+    {
+     "name": "xArm7",
+     "expected": 20,
+     "completed": 20,
+     "grasp": 20,
+     "grasp_unknown": 0,
+     "hang": 10,
+     "hang_unknown": 0,
+     "place": null
+    },
+    {
+     "name": "Kinova",
+     "expected": 20,
+     "completed": 20,
+     "grasp": 20,
+     "grasp_unknown": 0,
+     "hang": 8,
+     "hang_unknown": 0,
+     "place": null
+    },
+    {
+     "name": "Sawyer",
+     "expected": 20,
+     "completed": 20,
+     "grasp": 20,
+     "grasp_unknown": 0,
+     "hang": 14,
+     "hang_unknown": 0,
+     "place": null
+    }
+   ]
+  },
+  {
+   "id": "lerobot24_dino_geometry_only",
+   "state": "stopped",
+   "task": "hang_cup",
+   "expected": 100,
+   "audited": false,
+   "updated_at": 1795346316.659926,
+   "title": "DINOv2-B/14-reg4＋LeRobot ACT · Franka400 基线＋几何辅助",
+   "family": "LeRobot ACT · 换臂对齐与几何辅助 · 104 四组评测",
+   "task_label": "挂杯",
+   "connection": "online",
+   "live_groups": 0,
+   "training": [
+    {
+     "current": 10000,
+     "target": 10000,
+     "state": "complete",
+     "label": "几何辅助"
+    },
+    {
+     "current": 50000,
+     "target": 50000,
+     "state": "complete",
+     "label": "LeRobot ACT"
+    }
+   ],
+   "groups": [
+    {
+     "name": "Franka",
+     "expected": 20,
+     "completed": 20,
+     "grasp": 18,
+     "grasp_unknown": 0,
+     "hang": 10,
+     "hang_unknown": 0,
+     "place": null
+    },
+    {
+     "name": "UR5e",
+     "expected": 20,
+     "completed": 20,
+     "grasp": 20,
+     "grasp_unknown": 0,
+     "hang": 4,
+     "hang_unknown": 0,
+     "place": null
+    },
+    {
+     "name": "xArm7",
+     "expected": 20,
+     "completed": 20,
+     "grasp": 20,
+     "grasp_unknown": 0,
+     "hang": 6,
+     "hang_unknown": 0,
+     "place": null
+    },
+    {
+     "name": "Kinova",
+     "expected": 20,
+     "completed": 20,
+     "grasp": 20,
+     "grasp_unknown": 0,
+     "hang": 8,
+     "hang_unknown": 0,
+     "place": null
+    },
+    {
+     "name": "Sawyer",
+     "expected": 20,
+     "completed": 20,
+     "grasp": 20,
+     "grasp_unknown": 0,
+     "hang": 7,
+     "hang_unknown": 0,
+     "place": null
+    }
+   ]
+  },
+  {
+   "id": "lerobot24_dino_align_only",
+   "state": "stopped",
+   "task": "hang_cup",
+   "expected": 100,
+   "audited": false,
+   "updated_at": 1795346316.659926,
+   "title": "DINOv2-B/14-reg4＋LeRobot ACT · Franka400 基线＋换臂对齐",
+   "family": "LeRobot ACT · 换臂对齐与几何辅助 · 104 四组评测",
+   "task_label": "挂杯",
+   "connection": "online",
+   "live_groups": 0,
+   "training": [
+    {
+     "current": 10000,
+     "target": 10000,
+     "state": "complete",
+     "label": "换臂对齐"
+    },
+    {
+     "current": 50000,
+     "target": 50000,
+     "state": "complete",
+     "label": "LeRobot ACT"
+    }
+   ],
+   "groups": [
+    {
+     "name": "Franka",
+     "expected": 20,
+     "completed": 20,
+     "grasp": 20,
+     "grasp_unknown": 0,
+     "hang": 10,
+     "hang_unknown": 0,
+     "place": null
+    },
+    {
+     "name": "UR5e",
+     "expected": 20,
+     "completed": 20,
+     "grasp": 20,
+     "grasp_unknown": 0,
+     "hang": 12,
+     "hang_unknown": 0,
+     "place": null
+    },
+    {
+     "name": "xArm7",
+     "expected": 20,
+     "completed": 20,
+     "grasp": 20,
+     "grasp_unknown": 0,
+     "hang": 14,
+     "hang_unknown": 0,
+     "place": null
+    },
+    {
+     "name": "Kinova",
+     "expected": 20,
+     "completed": 20,
+     "grasp": 20,
+     "grasp_unknown": 0,
+     "hang": 11,
+     "hang_unknown": 0,
+     "place": null
+    },
+    {
+     "name": "Sawyer",
+     "expected": 20,
+     "completed": 20,
+     "grasp": 20,
+     "grasp_unknown": 0,
+     "hang": 9,
+     "hang_unknown": 0,
+     "place": null
+    }
+   ]
+  },
+  {
+   "id": "dp_transfer104_hang_resnet_dp",
+   "state": "complete",
+   "task": "hang_cup",
+   "expected": 100,
+   "audited": true,
+   "updated_at": 1795115146.6369445,
+   "title": "ResNet18 原始 RGB＋LeRobot DP",
+   "family": "Diffusion Policy · 104 评测",
+   "task_label": "挂杯",
+   "connection": "online",
+   "live_groups": 0,
+   "training": [
+    {
+     "current": 50000,
+     "target": 50000,
+     "state": "complete",
+     "label": "DP"
+    }
+   ],
+   "groups": [
+    {
+     "name": "Franka",
+     "expected": 20,
+     "completed": 20,
+     "grasp": 19,
+     "grasp_unknown": 0,
+     "hang": 11,
+     "hang_unknown": 0,
+     "place": null
+    },
+    {
+     "name": "UR5e",
+     "expected": 20,
+     "completed": 20,
+     "grasp": 20,
+     "grasp_unknown": 0,
+     "hang": 1,
+     "hang_unknown": 0,
+     "place": null
+    },
+    {
+     "name": "xArm7",
+     "expected": 20,
+     "completed": 20,
+     "grasp": 20,
+     "grasp_unknown": 0,
+     "hang": 2,
+     "hang_unknown": 0,
+     "place": null
+    },
+    {
+     "name": "Kinova",
+     "expected": 20,
+     "completed": 20,
+     "grasp": 20,
+     "grasp_unknown": 0,
+     "hang": 2,
+     "hang_unknown": 0,
+     "place": null
+    },
+    {
+     "name": "Sawyer",
+     "expected": 20,
+     "completed": 20,
+     "grasp": 8,
+     "grasp_unknown": 0,
+     "hang": 2,
+     "hang_unknown": 0,
+     "place": null
+    }
+   ]
+  },
+  {
+   "id": "dp_transfer104_hang_dino_dp",
+   "state": "stopped",
+   "task": "hang_cup",
+   "expected": null,
+   "audited": false,
+   "updated_at": 1795115146.6369445,
+   "title": "冻结 DINOv2 特征＋LeRobot DP",
+   "family": "Diffusion Policy · 104 评测",
+   "task_label": "挂杯",
+   "connection": "online",
+   "live_groups": 0,
+   "training": [
+    {
+     "current": 50000,
+     "target": 50000,
+     "state": "complete",
+     "label": "DP"
+    }
+   ],
+   "groups": [
+    {
+     "name": "Franka",
+     "expected": null,
+     "completed": 12,
+     "grasp": 12,
+     "grasp_unknown": 0,
+     "hang": 7,
+     "hang_unknown": 0,
+     "place": null
+    },
+    {
+     "name": "UR5e",
+     "expected": null,
+     "completed": 10,
+     "grasp": 10,
+     "grasp_unknown": 0,
+     "hang": 5,
+     "hang_unknown": 0,
+     "place": null
+    },
+    {
+     "name": "xArm7",
+     "expected": null,
+     "completed": 9,
+     "grasp": 9,
+     "grasp_unknown": 0,
+     "hang": 6,
+     "hang_unknown": 0,
+     "place": null
+    },
+    {
+     "name": "Kinova",
+     "expected": null,
+     "completed": 4,
+     "grasp": 4,
+     "grasp_unknown": 0,
+     "hang": 3,
+     "hang_unknown": 0,
+     "place": null
+    },
+    {
+     "name": "Sawyer",
+     "expected": null,
+     "completed": 4,
+     "grasp": 4,
+     "grasp_unknown": 0,
+     "hang": 3,
+     "hang_unknown": 0,
+     "place": null
+    }
+   ]
+  },
+  {
+   "id": "dp_transfer104_coffee_plain_dp",
+   "state": "complete",
+   "task": "pick_mugcup_place_coffeemachine",
+   "expected": 100,
+   "audited": true,
+   "updated_at": 1795115146.6369445,
+   "title": "Franka100 纯 DP · GHOST/LeRobot",
+   "family": "Diffusion Policy · 104 评测",
+   "task_label": "咖啡机放杯",
+   "connection": "online",
+   "live_groups": 0,
+   "training": [
+    {
+     "current": 50000,
+     "target": 50000,
+     "state": "complete",
+     "label": "DP"
+    }
+   ],
+   "groups": [
+    {
+     "name": "Franka",
+     "expected": 20,
+     "completed": 20,
+     "grasp": 18,
+     "grasp_unknown": 0,
+     "hang": null,
+     "place": 18,
+     "place_unknown": 0
+    },
+    {
+     "name": "UR5e",
+     "expected": 20,
+     "completed": 20,
+     "grasp": 19,
+     "grasp_unknown": 0,
+     "hang": null,
+     "place": 18,
+     "place_unknown": 0
+    },
+    {
+     "name": "xArm7",
+     "expected": 20,
+     "completed": 20,
+     "grasp": 19,
+     "grasp_unknown": 0,
+     "hang": null,
+     "place": 11,
+     "place_unknown": 0
+    },
+    {
+     "name": "Kinova",
+     "expected": 20,
+     "completed": 20,
+     "grasp": 18,
+     "grasp_unknown": 0,
+     "hang": null,
+     "place": 18,
+     "place_unknown": 0
+    },
+    {
+     "name": "Sawyer",
+     "expected": 20,
+     "completed": 20,
+     "grasp": 19,
+     "grasp_unknown": 0,
+     "hang": null,
+     "place": 10,
+     "place_unknown": 0
+    }
+   ]
   }
  ],
- "completion_estimates": {
-  "affgoal_dp_win3x3_sparse_obs2_h16_relative_tcp_crop_jitter_minmax_ddpm_133_gpu1_leek_50000": {
-   "training": {
-    "finish_at": 1795357870.0066571
-   }
-  },
-  "affgoal_dp_win3x3_sparse_obs2_h16_relative_tcp_minmax_ddpm_133_gpu0_coffee_50000": {
-   "training": {
-    "finish_at": 1795350958.6755364
-   }
-  },
-  "aura_franka100_dp_pick_factory_peg_insert": {
-   "evaluation": {
-    "finish_at": 1795347272.0564284
-   }
-  },
-  "aura_franka100_dp_pick_factory_gear_mesh": {
-   "evaluation": {
-    "finish_at": 1795347592.4397092
-   }
-  },
-  "aura_franka100_dp_pick_usb_insert_laptop": {
-   "evaluation": {
-    "finish_at": 1795347938.801547
-   }
-  },
-  "aura_franka100_dp_pick_hammer_place_on_nail": {
-   "evaluation": {
-    "finish_at": 1795347723.5608401
-   }
-  }
- },
+ "completion_estimates": {},
  "feeds": {
   "数据源 1": {
-   "age_seconds": 231657.13797354698,
+   "age_seconds": 231687.1588385105,
    "error": null
   },
   "数据源 2": {
-   "age_seconds": 44.119064807891846,
+   "age_seconds": 7.378096580505371,
    "error": null
   },
   "数据源 3": {
-   "age_seconds": 10.483578443527222,
+   "age_seconds": 7.692034721374512,
    "error": null
   },
   "数据源 4": {
-   "age_seconds": 44.27608323097229,
+   "age_seconds": 7.558979272842407,
    "error": null
   },
   "数据源 5": {
-   "age_seconds": 44.16124415397644,
+   "age_seconds": 7.420018434524536,
    "error": null
   },
   "数据源 6": {
-   "age_seconds": 44.213698863983154,
+   "age_seconds": 7.459192276000977,
    "error": null
   },
   "数据源 7": {
-   "age_seconds": 10.035627126693726,
+   "age_seconds": 7.257319927215576,
    "error": null
   },
   "数据源 8": {
-   "age_seconds": 69.17742109298706,
+   "age_seconds": 99.19828605651855,
    "error": null
   },
   "数据源 9": {
-   "age_seconds": 89.36338663101196,
+   "age_seconds": 270722.0117585659,
    "error": null
   },
   "数据源 10": {
-   "age_seconds": 270691.9908936024,
+   "age_seconds": 262271.4592754841,
    "error": null
   },
   "数据源 11": {
-   "age_seconds": 262241.43841052055,
+   "age_seconds": 247783.19649505615,
    "error": null
   },
   "数据源 12": {
-   "age_seconds": 247753.17563009262,
+   "age_seconds": 241404.05744576454,
    "error": null
   },
   "数据源 13": {
-   "age_seconds": 241374.036580801,
+   "age_seconds": 241359.8293607235,
    "error": null
   },
   "数据源 14": {
-   "age_seconds": 241329.80849575996,
+   "age_seconds": 185572.28844976425,
    "error": null
   },
   "数据源 15": {
-   "age_seconds": 185542.26758480072,
+   "age_seconds": 127899.9083135128,
    "error": null
   },
   "数据源 16": {
-   "age_seconds": 127869.88744854927,
+   "age_seconds": 165997.08582806587,
    "error": null
   },
   "数据源 17": {
-   "age_seconds": 165967.06496310234,
+   "age_seconds": 161677.4330534935,
    "error": null
   },
   "数据源 18": {
-   "age_seconds": 161647.41218852997,
+   "age_seconds": 127455.79296422005,
    "error": null
   },
   "数据源 19": {
-   "age_seconds": 127425.77209925652,
+   "age_seconds": 2.923224925994873,
    "error": null
   },
   "数据源 20": {
-   "age_seconds": 9.642514944076538,
+   "age_seconds": 3.017162561416626,
    "error": null
   },
   "数据源 21": {
-   "age_seconds": 138881.39457511902,
+   "age_seconds": 138911.41544008255,
    "error": null
   },
   "数据源 22": {
-   "age_seconds": 137327.909583807,
+   "age_seconds": 137357.93044877052,
    "error": null
   },
   "数据源 23": {
-   "age_seconds": 86079.23624229431,
+   "age_seconds": 86109.25710725784,
    "error": null
   },
   "数据源 24": {
-   "age_seconds": 78210.03550672531,
+   "age_seconds": 78240.05637168884,
    "error": null
   },
   "数据源 25": {
-   "age_seconds": 45428.81206822395,
+   "age_seconds": 45458.832933187485,
    "error": null
   },
   "数据源 26": {
-   "age_seconds": 7517.00890994072,
+   "age_seconds": 7547.029774904251,
    "error": null
   },
   "数据源 27": {
-   "age_seconds": 48945.966930150986,
+   "age_seconds": 48975.98779511452,
    "error": null
   },
   "数据源 28": {
-   "age_seconds": 81546.86950612068,
+   "age_seconds": 81576.89037108421,
    "error": null
   },
   "数据源 29": {
-   "age_seconds": 3.336604118347168,
+   "age_seconds": 15.686476230621338,
    "error": null
   },
   "数据源 30": {
-   "age_seconds": 3.373962163925171,
+   "age_seconds": 15.686515092849731,
    "error": null
   },
   "数据源 31": {
-   "age_seconds": 223100.50902056694,
+   "age_seconds": 223130.52988553047,
    "error": null
   },
   "数据源 32": {
-   "age_seconds": 205551.61964058876,
+   "age_seconds": 205581.6405055523,
    "error": null
   }
  }
