@@ -1,5 +1,5 @@
 {
- "generated_at": 1795837871.030302,
+ "generated_at": 1795837901.0573704,
  "public_view": true,
  "rows": [
   {
@@ -9,12 +9,12 @@
    "expected": 100,
    "checkpoint_step": 20000,
    "audited": false,
-   "updated_at": 1795837846.3844752,
+   "updated_at": 1795837890.6624467,
    "title": "Peg Insertion · π0.5 全参微调",
    "family": "π0.5 · 全参微调",
    "task_label": "Peg Insertion",
    "connection": "online",
-   "live_groups": 16,
+   "live_groups": 14,
    "training": [
     {
      "current": 20000,
@@ -38,13 +38,13 @@
     {
      "name": "UR5e",
      "expected": 20,
-     "completed": 12,
-     "accepted": 12,
-     "grasp": 7,
+     "completed": 16,
+     "accepted": 16,
+     "grasp": 9,
      "grasp_unknown": 0,
      "hang_unknown": 0,
      "place": 0,
-     "task_success": 6
+     "task_success": 7
     },
     {
      "name": "xArm7",
@@ -60,13 +60,13 @@
     {
      "name": "Kinova",
      "expected": 20,
-     "completed": 4,
-     "accepted": 4,
-     "grasp": 1,
+     "completed": 8,
+     "accepted": 8,
+     "grasp": 2,
      "grasp_unknown": 0,
      "hang_unknown": 0,
      "place": 0,
-     "task_success": 0
+     "task_success": 1
     },
     {
      "name": "Sawyer",
@@ -90,7 +90,7 @@
    "expected": 100,
    "checkpoint_step": 20000,
    "audited": false,
-   "updated_at": 1795837846.9320607,
+   "updated_at": 1795837890.9814544,
    "title": "Gear Meshing · π0.5 全参微调",
    "family": "π0.5 · 全参微调",
    "task_label": "Gear Meshing",
@@ -171,7 +171,7 @@
    "expected": 100,
    "checkpoint_step": 20000,
    "audited": false,
-   "updated_at": 1795837846.5538309,
+   "updated_at": 1795837892.1116323,
    "title": "USB Insertion · π0.5 全参微调",
    "family": "π0.5 · 全参微调",
    "task_label": "USB Insertion",
@@ -252,7 +252,7 @@
    "expected": 100,
    "checkpoint_step": 20000,
    "audited": false,
-   "updated_at": 1795837828.3557634,
+   "updated_at": 1795837889.6362898,
    "title": "Hammer-on-Nail · π0.5 全参微调",
    "family": "π0.5 · 全参微调",
    "task_label": "Hammer-on-Nail",
@@ -260,7 +260,7 @@
    "live_groups": 0,
    "training": [
     {
-     "current": 6709,
+     "current": 6717,
      "target": 20000,
      "state": "running",
      "label": "π0.5 全参微调"
@@ -2236,7 +2236,7 @@
    "checkpoint_step": 50000,
    "audited": false,
    "thread_metric": false,
-   "updated_at": 1795837853.45832,
+   "updated_at": 1795837892.0073595,
    "title": "Franka100 咖啡机 · AffGoalDP-Win3x3-Sparse · 相对 TCP · Obs2 / H16 / Exec8 · Min-Max / DDPM",
    "family": "AffGoalDP-Win3x3-Sparse · 相对 TCP · Obs2 / H16 / Exec8 · Min-Max / DDPM",
    "task_label": "咖啡机放杯",
@@ -8222,7 +8222,7 @@
    "state": "trained",
    "task": "pick_factory_peg_insert",
    "expected": null,
-   "updated_at": 1795837861.7734983,
+   "updated_at": 1795837891.7764275,
    "title": "插销入孔 · 独立视觉头",
    "family": "AURA 装配 · 四项任务独立视觉头",
    "task_label": "插销入孔",
@@ -8243,7 +8243,7 @@
    "state": "trained",
    "task": "pick_factory_gear_mesh",
    "expected": null,
-   "updated_at": 1795837861.7734983,
+   "updated_at": 1795837891.7764275,
    "title": "齿轮啮合 · 独立视觉头",
    "family": "AURA 装配 · 四项任务独立视觉头",
    "task_label": "齿轮啮合",
@@ -8264,7 +8264,7 @@
    "state": "trained",
    "task": "pick_usb_insert_laptop",
    "expected": null,
-   "updated_at": 1795837861.7734983,
+   "updated_at": 1795837891.7764275,
    "title": "USB 插入 · 独立视觉头",
    "family": "AURA 装配 · 四项任务独立视觉头",
    "task_label": "USB 插入",
@@ -8285,7 +8285,7 @@
    "state": "trained",
    "task": "pick_hammer_place_on_nail",
    "expected": null,
-   "updated_at": 1795837861.7734983,
+   "updated_at": 1795837891.7764275,
    "title": "锤头对准钉帽 · 独立视觉头",
    "family": "AURA 装配 · 四项任务独立视觉头",
    "task_label": "锤头对准钉帽",
@@ -9092,7 +9092,7 @@
    "task": "hang_cup",
    "expected": 100,
    "audited": true,
-   "updated_at": 1795837861.732445,
+   "updated_at": 1795837891.737003,
    "title": "DINOv2-B/14＋ACT · 时间集成",
    "family": "ACT时间集成重测 · 原始RGB ACT配置",
    "task_label": "挂杯",
@@ -9171,7 +9171,7 @@
    "task": "hang_cup",
    "expected": 100,
    "audited": true,
-   "updated_at": 1795837861.7408607,
+   "updated_at": 1795837891.74622,
    "title": "原始 ResNet18 编码器＋ACT · 时间集成",
    "family": "ACT时间集成重测 · 原始RGB ACT配置",
    "task_label": "挂杯",
@@ -10864,7 +10864,7 @@
  "completion_estimates": {
   "pi05_assembly_24_104_20261126_peg": {
    "evaluation": {
-    "finish_at": 1795839624.4222953
+    "finish_at": 1795839219.9296682
    }
   },
   "pi05_assembly_24_104_20261126_usb": {
@@ -10874,205 +10874,205 @@
   },
   "pi05_assembly_24_104_20261126_hammer": {
    "training": {
-    "finish_at": 1795940721.331368
+    "finish_at": 1795940713.3229663
    }
   }
  },
  "feeds": {
   "数据源 1": {
-   "age_seconds": 723142.3309285641,
+   "age_seconds": 723172.3579969406,
    "error": null
   },
   "数据源 2": {
-   "age_seconds": 9.264403820037842,
+   "age_seconds": 9.291760921478271,
    "error": null
   },
   "数据源 3": {
-   "age_seconds": 9.29052186012268,
+   "age_seconds": 9.31351613998413,
    "error": null
   },
   "数据源 4": {
-   "age_seconds": 9.289907455444336,
+   "age_seconds": 9.314773321151733,
    "error": null
   },
   "数据源 5": {
-   "age_seconds": 9.3336021900177,
+   "age_seconds": 9.351177453994751,
    "error": null
   },
   "数据源 6": {
-   "age_seconds": 1.6190273761749268,
+   "age_seconds": 1.64497709274292,
    "error": null
   },
   "数据源 7": {
-   "age_seconds": 3.1422243118286133,
+   "age_seconds": 3.17018985748291,
    "error": null
   },
   "数据源 8": {
-   "age_seconds": 9.287695169448853,
+   "age_seconds": 9.309313774108887,
    "error": null
   },
   "数据源 9": {
-   "age_seconds": 8.147634029388428,
+   "age_seconds": 8.179444074630737,
    "error": null
   },
   "数据源 10": {
-   "age_seconds": 8.147770643234253,
+   "age_seconds": 8.180769920349121,
    "error": null
   },
   "数据源 11": {
-   "age_seconds": 12.667200088500977,
+   "age_seconds": 12.590521097183228,
    "error": null
   },
   "数据源 12": {
-   "age_seconds": 1.636080026626587,
+   "age_seconds": 1.6613736152648926,
    "error": null
   },
   "数据源 13": {
-   "age_seconds": 9.256803750991821,
+   "age_seconds": 9.280942916870117,
    "error": null
   },
   "数据源 14": {
-   "age_seconds": 12.68190860748291,
+   "age_seconds": 12.707768201828003,
    "error": null
   },
   "数据源 15": {
-   "age_seconds": 7.08051323890686,
+   "age_seconds": 7.666616916656494,
    "error": null
   },
   "数据源 16": {
-   "age_seconds": 6.98424506187439,
+   "age_seconds": 7.061955451965332,
    "error": null
   },
   "数据源 17": {
-   "age_seconds": 160091.5299193859,
+   "age_seconds": 160121.55698776245,
    "error": "暂未更新"
   },
   "数据源 18": {
-   "age_seconds": 160091.38817191124,
+   "age_seconds": 160121.41524028778,
    "error": "暂未更新"
   },
   "数据源 19": {
-   "age_seconds": 762177.1838486195,
+   "age_seconds": 762207.210916996,
    "error": null
   },
   "数据源 20": {
-   "age_seconds": 753726.6313655376,
+   "age_seconds": 753756.6584339142,
    "error": null
   },
   "数据源 21": {
-   "age_seconds": 739238.3685851097,
+   "age_seconds": 739268.3956534863,
    "error": null
   },
   "数据源 22": {
-   "age_seconds": 732859.2295358181,
+   "age_seconds": 732889.2566041946,
    "error": null
   },
   "数据源 23": {
-   "age_seconds": 732815.001450777,
+   "age_seconds": 732845.0285191536,
    "error": null
   },
   "数据源 24": {
-   "age_seconds": 677027.4605398178,
+   "age_seconds": 677057.4876081944,
    "error": null
   },
   "数据源 25": {
-   "age_seconds": 619355.0804035664,
+   "age_seconds": 619385.1074719429,
    "error": null
   },
   "数据源 26": {
-   "age_seconds": 657452.2579181194,
+   "age_seconds": 657482.284986496,
    "error": null
   },
   "数据源 27": {
-   "age_seconds": 653132.605143547,
+   "age_seconds": 653162.6322119236,
    "error": null
   },
   "数据源 28": {
-   "age_seconds": 618910.9650542736,
+   "age_seconds": 618940.9921226501,
    "error": null
   },
   "数据源 29": {
-   "age_seconds": 490672.75428175926,
+   "age_seconds": 490702.7813501358,
    "error": null
   },
   "数据源 30": {
-   "age_seconds": 476743.5842385292,
+   "age_seconds": 476773.61130690575,
    "error": null
   },
   "数据源 31": {
-   "age_seconds": 466670.27304673195,
+   "age_seconds": 466700.3001151085,
    "error": null
   },
   "数据源 32": {
-   "age_seconds": 453754.26611995697,
+   "age_seconds": 453784.2931883335,
    "error": null
   },
   "数据源 33": {
-   "age_seconds": 630366.5875301361,
+   "age_seconds": 630396.6145985126,
    "error": null
   },
   "数据源 34": {
-   "age_seconds": 628813.1025388241,
+   "age_seconds": 628843.1296072006,
    "error": null
   },
   "数据源 35": {
-   "age_seconds": 577564.4291973114,
+   "age_seconds": 577594.456265688,
    "error": null
   },
   "数据源 36": {
-   "age_seconds": 569695.2284617424,
+   "age_seconds": 569725.255530119,
    "error": null
   },
   "数据源 37": {
-   "age_seconds": 536914.005023241,
+   "age_seconds": 536944.0320916176,
    "error": null
   },
   "数据源 38": {
-   "age_seconds": 3.1353061199188232,
+   "age_seconds": 11.72530460357666,
    "error": null
   },
   "数据源 39": {
-   "age_seconds": 499002.2018649578,
+   "age_seconds": 499032.22893333435,
    "error": null
   },
   "数据源 40": {
-   "age_seconds": 540431.1598851681,
+   "age_seconds": 540461.1869535446,
    "error": null
   },
   "数据源 41": {
-   "age_seconds": 573032.0624611378,
+   "age_seconds": 573062.0895295143,
    "error": null
   },
   "数据源 42": {
-   "age_seconds": 13.247694253921509,
+   "age_seconds": 5.938028573989868,
    "error": null
   },
   "数据源 43": {
-   "age_seconds": 471955.34701800346,
+   "age_seconds": 471985.37408638,
    "error": null
   },
   "数据源 44": {
-   "age_seconds": 355486.2429213524,
+   "age_seconds": 355516.2699897289,
    "error": null
   },
   "数据源 45": {
-   "age_seconds": 714585.701975584,
+   "age_seconds": 714615.7290439606,
    "error": null
   },
   "数据源 46": {
-   "age_seconds": 697036.8125956059,
+   "age_seconds": 697066.8396639824,
    "error": null
   },
   "数据源 47": {
-   "age_seconds": 346261.4476015568,
+   "age_seconds": 346291.4746699333,
    "error": "暂未更新"
   },
   "数据源 48": {
-   "age_seconds": 178442.94615411758,
+   "age_seconds": 178472.97322249413,
    "error": null
   },
   "数据源 49": {
-   "age_seconds": 18.27946448326111,
+   "age_seconds": 8.137563705444336,
    "error": null
   }
  }
